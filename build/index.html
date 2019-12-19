@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
+        <link rel="stylesheet" href="css/styles.min.css" />
+        <title>
+            Главная страница
+        </title>
+    </head>
+    <body class="no-touch" ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <symbol viewBox="0 0 14.11 23.53" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M14.11 1.51L12.8 0 .69 10.48a2 2 0 000 3.06l12.09 10L14.09 22 2 12z" /></symbol>
+                <symbol viewBox="0 0 14.11 23.53" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M13.38 10L1.29 0 0 1.54l12.09 10L0 22l1.31 1.51 12.11-10.46a2.05 2.05 0 00.69-1.54 2 2 0 00-.73-1.51z" /></symbol>
+                <symbol viewBox="0 0 14 14" id="burger-close" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.4L12.6 0 7 5.6 1.4 0 0 1.4 5.6 7 0 12.6 1.4 14 7 8.4l5.6 5.6 1.4-1.4L8.4 7z" style="isolation:isolate" fill-rule="evenodd" /></symbol>
+                <symbol viewBox="0 0 27.6 16" id="burger-open" xmlns="http://www.w3.org/2000/svg"><path d="M26.6 2H1a1 1 0 010-2h25.6a1 1 0 010 2zm0 7H1a1 1 0 010-2h25.6a1 1 0 010 2zm0 7H1a1 1 0 010-2h25.6a1 1 0 010 2z" /></symbol>
+                <symbol id="instagram" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .ecls-1 {
+                                fill: none;
+                            }
+                        </style>
+                    </defs>
+                    <path
+                        class="ecls-1"
+                        d="M23.26 10.36a3.72 3.72 0 00-1.39-.92A5.46 5.46 0 0020 9.07C19.16 9 18.89 9 16.81 9H13.6a6.62 6.62 0 00-1.92.44 3.93 3.93 0 00-1.39.92 3.84 3.84 0 00-.89 1.42 5.83 5.83 0 00-.4 1.93v6.58a5.83 5.83 0 00.4 1.93 4.06 4.06 0 00.89 1.42 3.72 3.72 0 001.39.92 5.29 5.29 0 001.88.37H20a5.3 5.3 0 001.89-.37 4.16 4.16 0 001.39-.92 3.84 3.84 0 00.89-1.42 5.79 5.79 0 00.36-1.93v-6.58a5.55 5.55 0 00-.36-1.93 4.06 4.06 0 00-.91-1.42zm-.1 6.64v3.22a5.37 5.37 0 01-.27 1.49 2 2 0 01-.59.91 2.52 2.52 0 01-.9.61 4.2 4.2 0 01-1.45.28h-6.29a4.45 4.45 0 01-1.45-.28 1.83 1.83 0 01-.89-.61 2.77 2.77 0 01-.6-.91 4.45 4.45 0 01-.26-1.49v-6.47a5 5 0 01.26-1.49 2 2 0 01.6-.92 2.72 2.72 0 01.89-.61 4.54 4.54 0 011.45-.27H20a4.83 4.83 0 011.45.27 2.07 2.07 0 01.9.61 2.64 2.64 0 01.59.92 4.73 4.73 0 01.27 1.49z"
+                    />
+                    <path class="ecls-1" d="M20.94 11.73a.92.92 0 00-.92.86.93.93 0 101.85.14v-.09a.91.91 0 00-.93-.91zM16.8 12.9a4 4 0 00-4 4v.1a4 4 0 003.9 4.1h.1a4.1 4.1 0 000-8.2zm0 6.74a2.64 2.64 0 112.58-2.7V17a2.61 2.61 0 01-2.57 2.64z" />
+                    <path class="ecls-1" d="M17 1a16 16 0 1016 16A16 16 0 0017 1zm0 31a15 15 0 1115-15 15 15 0 01-15 15zm-.2-19.1h.01-.01z" />
+                    <path d="M17 0a17 17 0 1017 17A17 17 0 0017 0zm0 33a16 16 0 1116-16 16 16 0 01-16 16z" />
+                    <path
+                        d="M22.3 11.34a2.07 2.07 0 00-.9-.61 4.83 4.83 0 00-1.4-.27h-6.34a4.54 4.54 0 00-1.45.27 2.72 2.72 0 00-.89.61 2 2 0 00-.6.92 5 5 0 00-.26 1.49v6.44a4.45 4.45 0 00.26 1.49 2.77 2.77 0 00.6.91 1.83 1.83 0 00.89.61 4.45 4.45 0 001.45.28H20a4.2 4.2 0 001.45-.28 2.52 2.52 0 00.9-.61 2 2 0 00.59-.91 5.37 5.37 0 00.27-1.49v-6.44a4.73 4.73 0 00-.27-1.49 2.64 2.64 0 00-.64-.92zm-5.5 9.76h-.1a4 4 0 01-3.9-4.1v-.11a4 4 0 014-4 4.1 4.1 0 010 8.2zm5.07-8.37a.93.93 0 11-1.87-.14.93.93 0 011.85.05z"
+                    />
+                    <path d="M16.69 14.36a2.64 2.64 0 00.12 5.28A2.61 2.61 0 0019.39 17v-.06a2.64 2.64 0 00-2.7-2.58z" />
+                    <path
+                        d="M17 2a15 15 0 1015 15A15 15 0 0017 2zm7.51 15v3.29a5.79 5.79 0 01-.36 1.93 3.84 3.84 0 01-.89 1.42 4.16 4.16 0 01-1.39.92 5.3 5.3 0 01-1.89.37h-6.42a5.29 5.29 0 01-1.88-.37 3.72 3.72 0 01-1.39-.92 4.06 4.06 0 01-.89-1.42 5.83 5.83 0 01-.4-1.93v-6.58a5.83 5.83 0 01.4-1.93 3.84 3.84 0 01.89-1.42 3.93 3.93 0 011.39-.92A6.62 6.62 0 0113.6 9h3.21c2.08 0 2.35 0 3.19.07a5.46 5.46 0 011.87.37 3.72 3.72 0 011.39.92 4.06 4.06 0 01.89 1.42 5.55 5.55 0 01.36 1.93z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 34 34" id="whatsapp" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 0a17 17 0 1017 17A17 17 0 0017 0zm0 33a16 16 0 1116-16 16 16 0 01-16 16z" />
+                    <path d="M17 2a15 15 0 1015 15A15 15 0 0017 2zm7.53 14.53a7.7 7.7 0 01-7.64 7.76 7.57 7.57 0 01-3.71-1L9 24.69l1.39-4.16a7.76 7.76 0 01-1.09-4v-.34a7.64 7.64 0 0115.28.13z" />
+                    <path
+                        d="M16.85 10a6.48 6.48 0 00-6.38 5.89 4.72 4.72 0 000 .65 6.69 6.69 0 001.22 3.83l-.79 2.44 2.45-.81a6.41 6.41 0 003.54 1.09 6.48 6.48 0 006.42-6.54v-.51A6.48 6.48 0 0016.85 10zm3.78 9.21a1.88 1.88 0 01-1.26.92c-.33 0-.33.27-2.25-.47a7.75 7.75 0 01-3.21-2.89 5 5 0 01-.66-1.32 2 2 0 01-.1-.64 2.19 2.19 0 01.66-1.59.61.61 0 01.5-.24h.36c.1 0 .27-.07.43.31s.56 1.32.6 1.42a.44.44 0 010 .34 1.17 1.17 0 00-.13.24s0 .06-.07.1-.2.24-.3.34a.29.29 0 00-.06.37 4.83 4.83 0 001 1.32 5.26 5.26 0 001.52.95c.17.1.3.1.4 0s.46-.54.59-.75.27-.17.43-.1 1.1.51 1.29.61a1.22 1.22 0 01.34.17 1.44 1.44 0 01-.08.9z"
+                    />
+                </symbol>
+            </svg>
+        </div>
+
+        <div class="page-content">
+            <header class="page-header  page-header--absolute ">
+                <div class="container">
+                    <div class="page-header__row">
+                        <img src="img/logos/mobile-logo.svg" alt="Мобильное лого" class="page-header__mobile-logo" width="118" />
+
+                        <div class="main-nav__overlay"></div>
+                        <nav class="main-nav">
+                            <button class="main-nav__close-btn">
+                                <svg width="16" height="16" aria-hidden="true" class="icon icon-burger-close">
+                                    <use xlink:href="#burger-close"></use>
+                                </svg>
+                            </button>
+                            <ul class="main-nav__list">
+                                <li class="main-nav__list-item">
+                                    <a href="#" class="main-nav__link">
+                                        Программа
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="#" class="main-nav__link">
+                                        Услуги и цены
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="#" class="main-nav__link">
+                                        Режим дня
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item main-nav__list-item--main">
+                                    <a href="index.html" class="main-nav__link main-nav__link--main">
+                                        <picture>
+                                            <source srcset="img/logos/tablet-logo.svg" media="(max-width: 1024px)" />
+                                            <img src="img/logos/desktop-logo.svg" alt="Логотип" />
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="#" class="main-nav__link">
+                                        Фотогалерея
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="#" class="main-nav__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item main-nav__list-item--phone">
+                                    <a href="tel:+79857699682" class="main-nav__link main-nav__link--phone">
+                                        +7 985-769-96-82
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <button class="page-header__burger">
+                            <svg width="26" height="14" aria-hidden="true" class="icon icon-burger-open">
+                                <use xlink:href="#burger-open"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="page-main">
+                <div class="container">
+                    <section class="top-slider js-top-slider">
+                        <button class="top-slider__button top-slider__button--prev">
+                            <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <div class="top-slider__content">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="top-slider__card top-slider__card--english">
+                                            <div class="top-slider__card-video">
+                                                <video width="700" poster="misc/video/english.jpg" playsinline muted>
+                                                    <source src="misc/video/english.mp4" type="video/mp4" />
+                                                    <source src="misc/video/english.webm" type="video/webm" />
+                                                    Ваш браузер не поддерживает видео
+                                                </video>
+                                            </div>
+                                            <div class="top-slider__card-content">
+                                                <h3 class="top-slider__card-heading">
+                                                    АНГЛИЙСКИЙ ЯЗЫК
+                                                </h3>
+                                                <p class="top-slider__subtitle">
+                                                    В наших садах используется билингвальный подход к изучению языка. Обучение ведётся по уникальной методике Talented and Gifted.
+                                                </p>
+                                                <a href="#" class="top-slider__card-btn">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-slider__card top-slider__card--choreography">
+                                            <div class="top-slider__card-video">
+                                                <video width="700" poster="misc/video/dance.jpg" playsinline muted>
+                                                    <source src="misc/video/dance.mp4" type="video/mp4" />
+                                                    <source src="misc/video/dance.webm" type="video/webm" />
+                                                    Ваш браузер не поддерживает видео
+                                                </video>
+                                            </div>
+                                            <div class="top-slider__card-content">
+                                                <h3 class="top-slider__card-heading">
+                                                    ХОРЕОГРАФИЯ
+                                                </h3>
+                                                <p class="top-slider__subtitle">
+                                                    Занятия ведет настоящий профессионал влюбленный в свое дело. Детки нашего садика занимают первые места на танцевальных конкурсах.
+                                                </p>
+                                                <a href="#" class="top-slider__card-btn">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="top-slider__card top-slider__card--robots">
+                                            <div class="top-slider__card-video">
+                                                <video width="700" poster="misc/video/robot.jpg" playsinline muted>
+                                                    <source src="misc/video/robot.mp4" type="video/mp4" />
+                                                    <source src="misc/video/robot.webm" type="video/webm" />
+                                                    Ваш браузер не поддерживает видео
+                                                </video>
+                                            </div>
+                                            <div class="top-slider__card-content">
+                                                <h3 class="top-slider__card-heading">
+                                                    РОБОТОТЕХНИКА
+                                                </h3>
+                                                <p class="top-slider__subtitle">
+                                                    На кружке дети могут по-новому увидеть окружающий их мир, проводя время над разработкой и оживлением самых разнообразных роботов
+                                                </p>
+                                                <a href="#" class="top-slider__card-btn">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-slider__pagination"></div>
+                        </div>
+                        <button class="top-slider__button top-slider__button--next">
+                            <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </section>
+                    <section class="benefits">
+                        <ul class="benefits__list">
+                            <li class="benefits__list-item">
+                                <div class="benefits__card">
+                                    <h4 class="benefits__card-title">
+                                        Уютно
+                                    </h4>
+                                    <div class="benefits__card-content">
+                                        <h5 class="benefits__card-subtitle">
+                                            Уютно
+                                        </h5>
+                                        <p class="benefits__card-text">
+                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="benefits__list-item">
+                                <div class="benefits__card">
+                                    <h4 class="benefits__card-title">
+                                        0,5 ГА
+                                    </h4>
+                                    <div class="benefits__card-content">
+                                        <h5 class="benefits__card-subtitle">
+                                            В собственности сада
+                                        </h5>
+                                        <p class="benefits__card-text">
+                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="benefits__list-item">
+                                <div class="benefits__card">
+                                    <h4 class="benefits__card-title">
+                                        Гибкость
+                                    </h4>
+                                    <div class="benefits__card-content">
+                                        <h5 class="benefits__card-subtitle">
+                                            Индивидуальный тарифный план
+                                        </h5>
+                                        <p class="benefits__card-text">
+                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="benefits__list-item">
+                                <div class="benefits__card">
+                                    <h4 class="benefits__card-title">
+                                        2-7
+                                    </h4>
+                                    <div class="benefits__card-content">
+                                        <h5 class="benefits__card-subtitle">
+                                            Разновозрастное взаимодействие детей
+                                        </h5>
+                                        <p class="benefits__card-text">
+                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="our-groups js-our-groups-slider">
+                        <h2 class="our-groups__heading">
+                            Наши группы
+                        </h2>
+                        <div class="our-groups__slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="our-groups__card">
+                                            <div class="our-groups__card-image-container">
+                                                <img src="img/groups/ladushki.png" alt="" class="our-groups__card-image" />
+                                            </div>
+                                            <h5 class="our-groups__card-name">
+                                                Ладушки
+                                            </h5>
+                                            <p class="our-groups__card-age">
+                                                2-3 ГОДА
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our-groups__card">
+                                            <div class="our-groups__card-image-container">
+                                                <img src="img/groups/zvezdocki.png" alt="" class="our-groups__card-image" />
+                                            </div>
+                                            <h5 class="our-groups__card-name">
+                                                Звездочки
+                                            </h5>
+                                            <p class="our-groups__card-age">
+                                                3-4 ГОДА
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our-groups__card">
+                                            <div class="our-groups__card-image-container">
+                                                <img src="img/groups/luchicki.png" alt="" class="our-groups__card-image" />
+                                            </div>
+                                            <h5 class="our-groups__card-name">
+                                                Лучики
+                                            </h5>
+                                            <p class="our-groups__card-age">
+                                                4-5 ГОДА
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our-groups__card">
+                                            <div class="our-groups__card-image-container">
+                                                <img src="img/groups/vishenki.png" alt="" class="our-groups__card-image" />
+                                            </div>
+                                            <h5 class="our-groups__card-name">
+                                                ВИШЕНКИ
+                                            </h5>
+                                            <p class="our-groups__card-age">
+                                                5-6 ГОДА
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="our-groups__card">
+                                            <div class="our-groups__card-image-container">
+                                                <img src="img/groups/znaiki.png" alt="" class="our-groups__card-image" />
+                                            </div>
+                                            <h5 class="our-groups__card-name">
+                                                Знайки
+                                            </h5>
+                                            <p class="our-groups__card-age">
+                                                6-7 ГОДА
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="services">
+                        <h2 class="services__heading">
+                            Услуги и цены
+                        </h2>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <div class="services__card">
+                                    <h3 class="services__card-heading">
+                                        Старт
+                                    </h3>
+                                    <p class="services__time">
+                                        8:00-19:00
+                                    </p>
+                                    <span class="services__divider"> </span>
+                                    <div class="services__content">
+                                        <p>
+                                            Четырехразовое питание. Сетка занятий по программе Васильевой.
+                                        </p>
+                                        <p>
+                                            <b>
+                                                Дополнительно оплачивается: плавание, хореография, английский язык, музыкальные занятия.
+                                            </b>
+                                        </p>
+                                    </div>
+
+                                    <p class="services__price">
+                                        30 000 руб./месяц
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="services__list-item">
+                                <div class="services__card">
+                                    <h3 class="services__card-heading">
+                                        Базовый
+                                    </h3>
+                                    <p class="services__time">
+                                        8:00-20:00
+                                    </p>
+                                    <span class="services__divider"> </span>
+                                    <div class="services__content">
+                                        <p>
+                                            Пятиразовое питание. Сетка занятий по программе Васильевой.
+                                        </p>
+                                        <p>
+                                            <b>
+                                                Включены: хореография, английский язык, бассейн – по 1 одному занятию в неделю.
+                                            </b>
+                                        </p>
+                                    </div>
+
+                                    <p class="services__price">
+                                        37 000 руб./месяц
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="services__list-item">
+                                <div class="services__card">
+                                    <h3 class="services__card-heading">
+                                        Премиум
+                                    </h3>
+                                    <p class="services__time">
+                                        8:00-20:00
+                                    </p>
+                                    <span class="services__divider"> </span>
+                                    <div class="services__content">
+                                        <p>
+                                            Пятиразовое питание. Сетка занятий по программе Васильевой.
+                                        </p>
+                                        <p>
+                                            Включены: хореография, английский язык, бассейн – по 2 занятия в неделю.
+                                        </p>
+                                        <p>
+                                            <b>
+                                                В стоимость входят мастер-классы по флористике, мыловарению, бижутерии.
+                                            </b>
+                                        </p>
+                                    </div>
+
+                                    <p class="services__price">
+                                        43 000 руб./месяц
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="services__list-item">
+                                <div class="services__card">
+                                    <h3 class="services__card-heading">
+                                        Гибкий
+                                    </h3>
+                                    <p class="services__time">
+                                        по договоренности
+                                    </p>
+                                    <span class="services__divider"> </span>
+                                    <div class="services__content">
+                                        <p>
+                                            Мы готовы обсуждать различные варианты графиков, питания и системы индивидуального обучения для Вашего ребёнка.
+                                        </p>
+                                        <p>
+                                            <b>
+                                                Перейдите к подробному описанию наших услуги и заполните форму обратной связи. Наши специалисты свяжутся с Вами для обсуждения всех условий.
+                                            </b>
+                                        </p>
+                                    </div>
+
+                                    <p class="services__price">
+                                        по договоренности
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="services__more-btn">
+                            Подробнее
+                        </a>
+                    </section>
+                </div>
+            </main>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="page-footer__bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <a href="#" class="footer-nav__link">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="#" class="footer-nav__link">
+                                    Программа
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="#" class="footer-nav__link">
+                                    Услуги и цены
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--main">
+                                <a href="#" class="footer-nav__link footer-nav__link--main">
+                                    <picture>
+                                        <source srcset="img/logos/tablet-logo.svg" media="(max-width: 1024px)" />
+                                        <img src="img/logos/desktop-logo.svg" alt="Логотип" />
+                                    </picture>
+                                </a>
+                                <ul class="footer-nav__social-list">
+                                    <li class="footer-nav__social-list-item">
+                                        <a href="#" class="footer-nav__social-link">
+                                            <svg width="34" height="34" aria-hidden="true" class="icon icon-whatsapp">
+                                                <use xlink:href="#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="footer-nav__social-list-item">
+                                        <a href="#" class="footer-nav__social-link">
+                                            <svg width="34" height="34" aria-hidden="true" class="icon icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="#" class="footer-nav__link">
+                                    Режим дня
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="#" class="footer-nav__link">
+                                    Фотогалерея
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="#" class="footer-nav__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="page-footer__bottom-row">
+                        <div class="page-footer__location">
+                            Городской округ Химки,
+                            <br />
+                            поселок Старбеево
+                        </div>
+                        <div class="page-footer__contacts">
+                            <a href="tel:+79857699682" class="page-footer__phone-link">+7 985-769-96-82</a>
+                            <a href="mailto:info@zvetik7.ru" class="page-footer__email-link">e-mail: info@zvetik7.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/app.js"></script>
+        </div>
+    </body>
+</html>
