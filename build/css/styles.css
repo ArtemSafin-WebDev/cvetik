@@ -673,7 +673,7 @@ img {
   color: white;
   z-index: 500;
   padding-top: 2.8rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .page-header {
       padding-bottom: 2.8rem;
       min-height: auto; } }
@@ -1838,6 +1838,12 @@ img {
     .teachers {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
+  @media only screen and (max-width: 1024px) {
+    .teachers {
+      margin-top: 5.5rem; } }
+  @media only screen and (max-width: 768px) {
+    .teachers {
+      margin-bottom: 6rem; } }
   @media only screen and (max-width: 576px) {
     .teachers {
       margin-top: 5rem;
@@ -1852,14 +1858,16 @@ img {
   text-align: center; }
   @media only screen and (max-width: 1440px) {
     .teachers__heading {
-      margin-bottom: 6rem; } }
+      margin-bottom: 6rem;
+      font-size: 3.6rem; } }
   @media only screen and (max-width: 1024px) {
     .teachers__heading {
-      font-size: 3.6rem; } }
+      font-size: 2.4rem;
+      margin-bottom: 5rem; } }
   @media only screen and (max-width: 768px) {
     .teachers__heading {
-      font-size: 2.4rem;
-      margin-bottom: 4rem; } }
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
   @media only screen and (max-width: 576px) {
     .teachers__heading {
       margin-bottom: 3rem; } }
@@ -1884,21 +1892,21 @@ img {
       .teachers__list-item--half {
         width: 100%; } }
   .teachers__list-item:nth-child(1) .teachers__card-image-container {
-    border-color: #F04D53; }
+    border-color: #f04d53; }
   .teachers__list-item:nth-child(2) .teachers__card-image-container {
-    border-color: #6A92F8; }
+    border-color: #6a92f8; }
   .teachers__list-item:nth-child(3) .teachers__card-image-container {
-    border-color: #C961E4; }
+    border-color: #c961e4; }
   .teachers__list-item:nth-child(4) .teachers__card-image-container {
-    border-color: #FFC773; }
+    border-color: #ffc773; }
   .teachers__list-item:nth-child(5) .teachers__card-image-container {
-    border-color: #7BD684; }
+    border-color: #7bd684; }
   .teachers__list-item:nth-child(6) .teachers__card-image-container {
-    border-color: #8B28A6; }
+    border-color: #8b28a6; }
   .teachers__list-item:nth-child(7) .teachers__card-image-container {
-    border-color: #FFACBA; }
+    border-color: #ffacba; }
   .teachers__list-item:nth-child(8) .teachers__card-image-container {
-    border-color: #FFCA64; }
+    border-color: #ffca64; }
 
 .teachers__card {
   display: flex;
@@ -1913,7 +1921,7 @@ img {
   flex-shrink: 0;
   margin-right: 4.5rem;
   position: relative;
-  border: 10px solid #E24F54;
+  border: 10px solid #e24f54;
   border-radius: 50%;
   overflow: hidden; }
   @media only screen and (max-width: 1440px) {
@@ -1981,6 +1989,9 @@ img {
     .contacts {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
+  @media only screen and (max-width: 1024px) {
+    .contacts {
+      margin-top: 5.5rem; } }
   @media only screen and (max-width: 768px) {
     .contacts {
       margin-bottom: 6rem; } }
@@ -1998,14 +2009,16 @@ img {
   text-align: center; }
   @media only screen and (max-width: 1440px) {
     .contacts__heading {
-      margin-bottom: 6rem; } }
+      margin-bottom: 6rem;
+      font-size: 3.6rem; } }
   @media only screen and (max-width: 1024px) {
     .contacts__heading {
-      font-size: 3.6rem; } }
+      font-size: 2.4rem;
+      margin-bottom: 5rem; } }
   @media only screen and (max-width: 768px) {
     .contacts__heading {
-      font-size: 2.4rem;
-      margin-bottom: 4rem; } }
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
   @media only screen and (max-width: 576px) {
     .contacts__heading {
       margin-bottom: 3rem; } }
@@ -2329,6 +2342,9 @@ img {
     .holidays {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
+  @media only screen and (max-width: 1024px) {
+    .holidays {
+      margin-top: 5.5rem; } }
   @media only screen and (max-width: 768px) {
     .holidays {
       margin-bottom: 6rem; } }
@@ -2346,14 +2362,16 @@ img {
   text-align: center; }
   @media only screen and (max-width: 1440px) {
     .holidays__heading {
-      margin-bottom: 6rem; } }
+      margin-bottom: 6rem;
+      font-size: 3.6rem; } }
   @media only screen and (max-width: 1024px) {
     .holidays__heading {
-      font-size: 3.6rem; } }
+      font-size: 2.4rem;
+      margin-bottom: 5rem; } }
   @media only screen and (max-width: 768px) {
     .holidays__heading {
-      font-size: 2.4rem;
-      margin-bottom: 4rem; } }
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
   @media only screen and (max-width: 576px) {
     .holidays__heading {
       margin-bottom: 3rem; } }
@@ -2364,7 +2382,7 @@ img {
   -moz-column-gap: 4.8rem;
        column-gap: 4.8rem;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: black;
   margin-bottom: 10rem; }
   @media only screen and (max-width: 1024px) {
@@ -2381,7 +2399,9 @@ img {
   .holidays__text p {
     -moz-column-break-inside: avoid;
          break-inside: avoid;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
+    .holidays__text p:first-child {
+      margin-top: 0; }
     .holidays__text p:last-child {
       margin-bottom: 0; }
     .holidays__text p::first-letter {
@@ -2422,6 +2442,8 @@ img {
     padding-bottom: 82%; }
   .holidays__card:link, .holidays__card:visited {
     color: white; }
+  .no-touch .holidays__card:hover .holidays__card-image {
+    transform: scale(1.08); }
 
 .holidays__card-image-container {
   position: absolute;
@@ -2429,12 +2451,14 @@ img {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .holidays__card-image {
   width: 100%;
   height: 100%;
   display: block;
+  transition: transform .3s ease-in-out;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2471,3 +2495,887 @@ img {
     background-color: #FFACBA; }
   .holidays__card-label--green {
     background-color: #7BD684; }
+
+.program {
+  margin-top: 14rem;
+  margin-bottom: 27rem; }
+  @media only screen and (max-width: 1440px) {
+    .program {
+      margin-top: 8rem;
+      margin-bottom: 14rem; } }
+  @media only screen and (max-width: 1024px) {
+    .program {
+      margin-top: 5.5rem; } }
+  @media only screen and (max-width: 768px) {
+    .program {
+      margin-bottom: 6rem; } }
+  @media only screen and (max-width: 576px) {
+    .program {
+      margin-top: 5rem;
+      margin-bottom: 8rem; } }
+
+.program__heading {
+  font-size: 4.6rem;
+  font-weight: 600;
+  color: var(--superdark-violet);
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+  text-align: center; }
+  @media only screen and (max-width: 1440px) {
+    .program__heading {
+      margin-bottom: 6rem;
+      font-size: 3.6rem; } }
+  @media only screen and (max-width: 1024px) {
+    .program__heading {
+      font-size: 2.4rem;
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .program__heading {
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 576px) {
+    .program__heading {
+      margin-bottom: 3rem; } }
+
+.program__text {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 10rem; }
+  .program__text--about-us {
+    -moz-column-count: 1 !important;
+         column-count: 1 !important; }
+  @media only screen and (max-width: 1024px) {
+    .program__text {
+      -moz-column-gap: 3rem;
+           column-gap: 3rem; } }
+  @media only screen and (max-width: 576px) {
+    .program__text {
+      -moz-column-count: 1;
+           column-count: 1;
+      margin-bottom: 5rem; } }
+  .program__text p,
+  .program__text ul > li {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+    .program__text p:last-child,
+    .program__text ul > li:last-child {
+      margin-bottom: 0; }
+    .program__text p:first-child,
+    .program__text ul > li:first-child {
+      margin-top: 0; }
+  .program__text b {
+    font-weight: 500; }
+
+.program__subheading-block {
+  color: #6A92F8;
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-bottom: 14rem; }
+  .program__subheading-block--about-us {
+    max-width: none; }
+  @media only screen and (max-width: 576px) {
+    .program__subheading-block {
+      margin-bottom: 5rem; } }
+
+.program__subheading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 576px) {
+    .program__subheading {
+      font-size: 2.4rem;
+      margin-bottom: 1.2rem; } }
+
+.program__subheading-paragraph {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  margin-bottom: 7rem; }
+  @media only screen and (max-width: 576px) {
+    .program__subheading-paragraph {
+      font-size: 1.8rem;
+      margin-bottom: 4rem; } }
+
+.program__subheading-divider {
+  width: 48rem;
+  height: 1rem;
+  margin: 0 auto;
+  display: block;
+  background: #C961E4;
+  margin-top: 7rem; }
+  .program__subheading-divider--about-us {
+    width: 15rem; }
+  @media only screen and (max-width: 1440px) {
+    .program__subheading-divider {
+      height: 6px; } }
+  @media only screen and (max-width: 576px) {
+    .program__subheading-divider {
+      width: 70%;
+      height: 4px;
+      margin-top: 4rem; } }
+
+.program__blocks-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4rem -13rem; }
+  @media only screen and (max-width: 1440px) {
+    .program__blocks-list {
+      margin: 0; } }
+  @media only screen and (max-width: 576px) {
+    .program__blocks-list {
+      flex-wrap: nowrap;
+      flex-direction: column; } }
+
+.program__blocks-list-item {
+  width: 50%;
+  padding: 4rem 13rem; }
+  @media only screen and (max-width: 1440px) {
+    .program__blocks-list-item {
+      padding: 0; } }
+  @media only screen and (max-width: 576px) {
+    .program__blocks-list-item {
+      width: 100%;
+      margin-bottom: 5rem; }
+      .program__blocks-list-item:last-child {
+        margin-bottom: 0; } }
+
+.program__card-image-container {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden; }
+  .program__card-image-container::after {
+    content: '';
+    width: 100%;
+    display: block;
+    padding-bottom: 100%; }
+
+.program__card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: cover; object-position: center;'; }
+
+.program__card-title {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  line-height: 1.5;
+  color: #8B28A6;
+  margin-top: 7rem;
+  text-align: center; }
+  @media only screen and (max-width: 1440px) {
+    .program__card-title {
+      font-size: 3rem;
+      margin-top: 4rem; } }
+  @media only screen and (max-width: 768px) {
+    .program__card-title {
+      font-size: 2.4rem; } }
+  @media only screen and (max-width: 576px) {
+    .program__card-title {
+      margin-top: 2rem; } }
+
+.program__card {
+  display: block; }
+  .no-touch .program__card:hover .program__card-image {
+    transform: scale(1.05); }
+  @media only screen and (max-width: 1440px) {
+    .program__card {
+      width: 80%;
+      margin: 0 auto; } }
+
+.prices {
+  margin-top: 14rem;
+  margin-bottom: 27rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices {
+      margin-top: 8rem;
+      margin-bottom: 14rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices {
+      margin-top: 5.5rem;
+      margin-bottom: 7rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices {
+      margin-bottom: 6rem;
+      max-width: 61rem;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media only screen and (max-width: 576px) {
+    .prices {
+      margin-top: 5rem;
+      margin-bottom: 8rem; } }
+
+.prices__heading {
+  font-size: 4.6rem;
+  font-weight: 600;
+  color: var(--superdark-violet);
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+  text-align: center; }
+  @media only screen and (max-width: 1440px) {
+    .prices__heading {
+      margin-bottom: 6rem;
+      font-size: 3.6rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__heading {
+      font-size: 2.4rem;
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__heading {
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 576px) {
+    .prices__heading {
+      margin-bottom: 3rem; } }
+
+.prices__bonuses {
+  margin-bottom: 10rem; }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses {
+      margin-bottom: 7rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__bonuses {
+      margin-bottom: 4rem; } }
+
+.prices__bonuses-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__bonuses-paragraph {
+      margin-bottom: 8rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses-paragraph {
+      margin-bottom: 3rem;
+      font-size: 1.4rem; } }
+
+.prices__bonuses-list {
+  margin: -2.2rem;
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses-list {
+      margin: -1.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__bonuses-list {
+      margin: -1.7rem; } }
+
+.prices__bonuses-list-item {
+  width: 33.33%;
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses-list-item {
+      padding: 1.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__bonuses-list-item {
+      width: 100%;
+      padding: 1.7rem; } }
+
+.prices__bonuses-card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 48rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__bonuses-card {
+      min-height: 44rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses-card {
+      min-height: 32rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__bonuses-card {
+      min-height: 24rem;
+      max-width: 33rem;
+      margin: 0 auto; } }
+  .prices__bonuses-card--violet .prices__bonuses-card-top {
+    background-color: #8b28a6; }
+  .prices__bonuses-card--violet .prices__bonuses-card-bottom {
+    border-color: #8b28a6; }
+  .prices__bonuses-card--blue .prices__bonuses-card-top {
+    background-color: #658ff9; }
+  .prices__bonuses-card--blue .prices__bonuses-card-bottom {
+    border-color: #658ff9; }
+  .prices__bonuses-card--violet .prices__bonuses-card-top {
+    background-color: #f04d53; }
+  .prices__bonuses-card--violet .prices__bonuses-card-bottom {
+    border-color: #f04d53; }
+
+.prices__bonuses-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 13rem;
+  padding: 2.5rem;
+  color: white;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #8b28a6;
+  text-align: center; }
+  @media only screen and (max-width: 1440px) {
+    .prices__bonuses-card-top {
+      font-size: 1.8rem;
+      min-height: 11rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses-card-top {
+      font-size: 1.4rem;
+      padding: 2rem;
+      min-height: 8rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__bonuses-card-top {
+      padding: 1.4rem;
+      min-height: 6rem; } }
+
+.prices__bonuses-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1e5f4;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: black;
+  flex-grow: 1;
+  border-bottom: 1rem solid #8b28a6;
+  text-align: center;
+  padding: 0 5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__bonuses-card-bottom {
+      font-weight: 400; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__bonuses-card-bottom {
+      font-weight: 500;
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__bonuses-card-bottom {
+      border-bottom-width: 0.5rem;
+      font-weight: 400; } }
+
+.prices__remark {
+  max-width: 122rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__remark {
+      max-width: 85rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__remark {
+      max-width: none;
+      width: auto;
+      margin-bottom: 5rem; } }
+
+.prices__remark-text {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #6a92f8;
+  font-family: var(--roboto);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__remark-text {
+      font-size: 2.4rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__remark-text {
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__remark-text {
+      font-size: 1.8rem;
+      line-height: 1.4;
+      margin-bottom: 2rem; } }
+
+.prices__remark-divider {
+  width: 11rem;
+  height: 1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #c961e4; }
+  @media only screen and (max-width: 1440px) {
+    .prices__remark-divider {
+      height: 6px; } }
+  @media only screen and (max-width: 576px) {
+    .prices__remark-divider {
+      height: 4px; } }
+  @media only screen and (max-width: 768px) {
+    .prices__remark-divider {
+      width: 7rem; } }
+
+.prices__plans-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.6rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-list {
+      margin: -1.2rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-list {
+      margin: -1rem; } }
+
+.prices__plans-list-item {
+  width: 25%;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-list-item {
+      width: 50%;
+      padding: 1.2rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-list-item {
+      width: 100%;
+      padding: 1rem; } }
+
+.prices__plans-card {
+  border: 2px solid #6a92f8;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card {
+      max-width: 45rem;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 82rem; } }
+  .prices__plans-card--violet {
+    border-color: #c961e4; }
+    .prices__plans-card--violet .prices__plans-card-type {
+      background-color: #c961e4; }
+    .prices__plans-card--violet .prices__plans-card-text em {
+      color: #c961e4; }
+    .prices__plans-card--violet .prices__plans-card-regime-btn {
+      background-color: #c961e4; }
+      .no-touch .prices__plans-card--violet .prices__plans-card-regime-btn:hover,
+      .touch .prices__plans-card--violet .prices__plans-card-regime-btn:active {
+        background-color: #c24be0; }
+    .prices__plans-card--violet .prices__plans-card-price {
+      color: #c961e4; }
+  .prices__plans-card--red {
+    border-color: #e24f54; }
+    .prices__plans-card--red .prices__plans-card-type {
+      background-color: #e24f54; }
+    .prices__plans-card--red .prices__plans-card-text em {
+      color: #e24f54; }
+    .prices__plans-card--red .prices__plans-card-regime-btn {
+      background-color: #e24f54; }
+      .no-touch .prices__plans-card--red .prices__plans-card-regime-btn:hover,
+      .touch .prices__plans-card--red .prices__plans-card-regime-btn:active {
+        background-color: #de393f; }
+    .prices__plans-card--red .prices__plans-card-price {
+      color: #e24f54; }
+  .prices__plans-card--green {
+    border-color: #7bd684; }
+    .prices__plans-card--green .prices__plans-card-type {
+      background-color: #7bd684; }
+    .prices__plans-card--green .prices__plans-card-text em {
+      color: #7bd684; }
+    .prices__plans-card--green .prices__plans-card-regime-btn {
+      background-color: #7bd684; }
+      .no-touch .prices__plans-card--green .prices__plans-card-regime-btn:hover,
+      .touch .prices__plans-card--green .prices__plans-card-regime-btn:active {
+        background-color: #68d072; }
+    .prices__plans-card--green .prices__plans-card-price {
+      color: #7bd684; }
+
+.prices__plans-card-type {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  padding: 1rem;
+  background-color: #6a92f8;
+  text-transform: uppercase;
+  color: white;
+  flex-shrink: 0; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-card-type {
+      font-size: 3.6rem;
+      padding: 2rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-type {
+      font-size: 2.4rem;
+      padding: 1.7rem; } }
+
+.prices__plans-card-content {
+  flex-grow: 1;
+  padding: 0 4rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-card-content {
+      padding-bottom: 4rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-content {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+
+.prices__plans-card-time {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #8b28a6;
+  margin-top: 1.5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-card-time {
+      font-size: 2.4rem;
+      margin-top: 2.5rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-time {
+      font-size: 1.8rem;
+      margin-top: 2rem; } }
+
+.prices__plans-card-text {
+  margin-top: 1.5rem;
+  font-family: var(--roboto);
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-card-text {
+      margin-top: 2.5rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-text {
+      margin-top: 2rem;
+      font-size: 1.4rem; } }
+  .prices__plans-card-text > *:first-child {
+    margin-top: 0; }
+  .prices__plans-card-text > *:last-child {
+    margin-bottom: 0; }
+  .prices__plans-card-text p {
+    margin: 2rem 0; }
+    @media only screen and (max-width: 1024px) {
+      .prices__plans-card-text p {
+        margin: 1.5rem 0; } }
+  .prices__plans-card-text em {
+    color: #6a92f8;
+    font-weight: 500;
+    font-style: normal; }
+
+.prices__plans-card-regime {
+  margin-top: auto; }
+
+.prices__plans-card-regime-remark {
+  color: #8b28a6;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: var(--roboto);
+  margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-card-regime-remark {
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-regime-remark {
+      font-size: 1.4rem; } }
+
+.prices__plans-card-regime-btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.8rem 6.3rem;
+  border-radius: 3.5rem;
+  display: inline-block;
+  background-color: #6a92f8;
+  margin-bottom: 2rem;
+  transition: background-color 0.2s; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-card-regime-btn {
+      font-size: 1.8rem;
+      padding: 1.5rem 4rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-regime-btn {
+      font-size: 1.4rem;
+      padding: 1.2rem 2.3rem; } }
+  .prices__plans-card-regime-btn:link, .prices__plans-card-regime-btn:visited {
+    color: white; }
+  .no-touch .prices__plans-card-regime-btn:hover,
+  .touch .prices__plans-card-regime-btn:active {
+    background-color: #5280f7; }
+
+.prices__plans-card-price {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.6;
+  color: #6a92f8; }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-card-price {
+      font-size: 1.8rem; } }
+
+.prices__plans-card-input-row {
+  display: flex;
+  margin-bottom: 2rem; }
+
+.prices__plans-inputs {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-bottom: 3.5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-inputs {
+      margin-bottom: 6rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-inputs {
+      margin-left: 0;
+      margin-right: 0; } }
+
+.prices__plans-card-input-wrapper {
+  width: 30%;
+  flex-grow: 1;
+  margin-right: 8px; }
+  .prices__plans-card-input-wrapper .parsley-errors-list {
+    text-align: left;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    color: #7bd684; }
+  .prices__plans-card-input-wrapper:last-child {
+    margin-right: 0; }
+  .prices__plans-card-input-wrapper input,
+  .prices__plans-card-input-wrapper textarea {
+    font-size: 1.4rem;
+    padding: 0.7rem 1.5rem;
+    font-family: var(--roboto);
+    color: black;
+    border: 2px solid #7bd684;
+    background: transparent;
+    border-radius: 1.5rem;
+    width: 100%; }
+    @media only screen and (max-width: 1440px) {
+      .prices__plans-card-input-wrapper input,
+      .prices__plans-card-input-wrapper textarea {
+        font-size: 1.6rem;
+        padding: 1.6rem 3rem;
+        border-radius: 2.5rem; } }
+    @media only screen and (max-width: 1024px) {
+      .prices__plans-card-input-wrapper input,
+      .prices__plans-card-input-wrapper textarea {
+        font-size: 1.4rem;
+        border-radius: 1.5rem;
+        padding: 1.2rem 2.5rem; } }
+    .prices__plans-card-input-wrapper input::-webkit-input-placeholder,
+    .prices__plans-card-input-wrapper textarea::-webkit-input-placeholder {
+      color: #808080; }
+      @media only screen and (max-width: 1440px) {
+        .prices__plans-card-input-wrapper input::-webkit-input-placeholder,
+        .prices__plans-card-input-wrapper textarea::-webkit-input-placeholder {
+          text-transform: uppercase; } }
+    .prices__plans-card-input-wrapper input:-moz-placeholder,
+    .prices__plans-card-input-wrapper textarea:-moz-placeholder {
+      color: #808080; }
+      @media only screen and (max-width: 1440px) {
+        .prices__plans-card-input-wrapper input:-moz-placeholder,
+        .prices__plans-card-input-wrapper textarea:-moz-placeholder {
+          text-transform: uppercase; } }
+    .prices__plans-card-input-wrapper input::-moz-placeholder,
+    .prices__plans-card-input-wrapper textarea::-moz-placeholder {
+      color: #808080; }
+      @media only screen and (max-width: 1440px) {
+        .prices__plans-card-input-wrapper input::-moz-placeholder,
+        .prices__plans-card-input-wrapper textarea::-moz-placeholder {
+          text-transform: uppercase; } }
+    .prices__plans-card-input-wrapper input:-ms-input-placeholder,
+    .prices__plans-card-input-wrapper textarea:-ms-input-placeholder {
+      color: #808080; }
+      @media only screen and (max-width: 1440px) {
+        .prices__plans-card-input-wrapper input:-ms-input-placeholder,
+        .prices__plans-card-input-wrapper textarea:-ms-input-placeholder {
+          text-transform: uppercase; } }
+  .prices__plans-card-input-wrapper textarea {
+    resize: none;
+    height: 20rem; }
+    @media only screen and (max-width: 1440px) {
+      .prices__plans-card-input-wrapper textarea {
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
+    @media only screen and (max-width: 1024px) {
+      .prices__plans-card-input-wrapper textarea {
+        height: 14rem; } }
+
+.prices__plans-bottom-remark {
+  color: #8b28a6;
+  font-size: 2.4rem;
+  line-height: 2;
+  font-family: var(--roboto);
+  text-align: center;
+  max-width: 1145px;
+  margin-top: 5rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__plans-bottom-remark {
+      margin-top: 3rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__plans-bottom-remark {
+      margin-top: 2.5rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__plans-bottom-remark {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      max-width: 45rem;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.prices__additional {
+  margin-top: 8rem;
+  margin-bottom: 20rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional {
+      margin-bottom: 10rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__additional {
+      margin-top: 6.5rem; } }
+  @media only screen and (max-width: 576px) {
+    .prices__additional {
+      margin-bottom: 6.5rem; } }
+
+.prices__additional-heading {
+  font-weight: 600;
+  font-size: 4.6rem;
+  line-height: 1.5;
+  color: #8b28a6;
+  text-align: center;
+  margin-bottom: 11rem;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-heading {
+      margin-bottom: 6rem;
+      font-size: 3.6rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-heading {
+      font-size: 2.4rem;
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__additional-heading {
+      font-size: 1.8rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 576px) {
+    .prices__additional-heading {
+      margin-bottom: 3rem; } }
+
+.prices__additional-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4.5rem -2.2rem; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-list {
+      margin: -3.7rem -2rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-list {
+      margin: -2.7rem -1.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__additional-list {
+      padding: -1.4rem; } }
+
+.prices__additional-list-item {
+  width: 33.33%;
+  padding: 4.5rem 2.2rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-list-item {
+      padding: 3.7rem 2rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-list-item {
+      padding: 2.7rem 1.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .prices__additional-list-item {
+      width: 50%;
+      padding: 1.4rem; } }
+  @media only screen and (max-width: 576px) {
+    .prices__additional-list-item {
+      width: 100%; } }
+
+.prices__additional-card {
+  background: #ffc773;
+  color: white;
+  padding: 9rem 2rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-card {
+      padding-top: 7.5rem;
+      padding-bottom: 3rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-card {
+      padding-top: 5.5rem;
+      padding-bottom: 4.5rem; } }
+  .prices__additional-card--pink {
+    background: #f5bbc5; }
+  .prices__additional-card--light-violet {
+    background: #eb9fff; }
+  .prices__additional-card--blue {
+    background: #6a92f8; }
+  .prices__additional-card--violet {
+    background: #c961e4; }
+
+.prices__additional-card-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.6; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-card-title {
+      font-size: 3rem;
+      line-height: 2; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-card-title {
+      font-size: 1.8rem; } }
+
+.prices__additional-cost-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 600;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-cost-text {
+      line-height: 2; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-cost-text {
+      font-size: 1.4rem; } }
+
+.prices__additional-cost-number {
+  font-size: 6.4rem;
+  line-height: 1.6;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 1440px) {
+    .prices__additional-cost-number {
+      font-size: 4.8rem;
+      margin-top: 5rem; } }
+  @media only screen and (max-width: 1024px) {
+    .prices__additional-cost-number {
+      font-size: 2.4rem;
+      margin-top: 2rem; } }

@@ -42,9 +42,12 @@
     color: white;
     z-index: 500;
     padding-top: 2.8rem;
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         padding-bottom: 2.8rem;
         min-height: auto;
+    }
+    @include breakpoint(mobile) {
+       
     }
     @include breakpoint(small-mobile) {
         padding-top: 2rem;

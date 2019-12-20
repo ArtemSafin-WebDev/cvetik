@@ -6,6 +6,14 @@
         margin-bottom: 14rem;
     }
 
+    @include breakpoint(tablet) {
+        margin-top: 5.5rem;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+    }
+
     @include breakpoint(small-mobile) {
         margin-top: 5rem;
         margin-bottom: 8rem;
@@ -21,14 +29,15 @@
     text-align: center;
     @include breakpoint(desktop) {
         margin-bottom: 6rem;
+        font-size: 3.6rem;
     }
     @include breakpoint(tablet) {
-        font-size: 3.6rem;
-        
+        font-size: 2.4rem;
+        margin-bottom: 5rem;
     }
     @include breakpoint(mobile) {
-        font-size: 2.4rem;
-        margin-bottom: 4rem;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
     }
     @include breakpoint(small-mobile) {
         margin-bottom: 3rem;
@@ -44,7 +53,6 @@
     }
 }
 
-
 .teachers__list-item {
     width: 100%;
     padding: 6.5rem 9rem;
@@ -59,46 +67,44 @@
     }
     &:nth-child(1) {
         .teachers__card-image-container {
-            border-color: #F04D53;
+            border-color: #f04d53;
         }
     }
     &:nth-child(2) {
         .teachers__card-image-container {
-            border-color: #6A92F8;
+            border-color: #6a92f8;
         }
     }
     &:nth-child(3) {
         .teachers__card-image-container {
-            border-color: #C961E4;
+            border-color: #c961e4;
         }
     }
     &:nth-child(4) {
         .teachers__card-image-container {
-            border-color: #FFC773;
+            border-color: #ffc773;
         }
     }
     &:nth-child(5) {
         .teachers__card-image-container {
-            border-color: #7BD684;
+            border-color: #7bd684;
         }
     }
     &:nth-child(6) {
         .teachers__card-image-container {
-            border-color: #8B28A6;
+            border-color: #8b28a6;
         }
     }
     &:nth-child(7) {
         .teachers__card-image-container {
-            border-color: #FFACBA;
+            border-color: #ffacba;
         }
     }
     &:nth-child(8) {
         .teachers__card-image-container {
-            border-color: #FFCA64;
+            border-color: #ffca64;
         }
     }
-   
-   
 }
 
 .teachers__card {
@@ -115,7 +121,7 @@
     flex-shrink: 0;
     margin-right: 4.5rem;
     position: relative;
-    border: 10px solid #E24F54;
+    border: 10px solid #e24f54;
     border-radius: 50%;
     overflow: hidden;
     @include breakpoint(desktop) {
@@ -129,13 +135,11 @@
         margin-right: 3rem;
     }
 
-
     @include breakpoint(mobile) {
         margin-right: 0;
         width: 30rem;
         height: 30rem;
     }
-
 
     @include breakpoint(small-mobile) {
         width: 22rem;
@@ -143,7 +147,6 @@
         border-width: 6px;
     }
 }
-
 
 .teachers__card-image {
     position: absolute;
@@ -153,7 +156,6 @@
     height: 100%;
     @include objectFitCover();
 }
-
 
 .teachers__card-content {
     width: 50%;
@@ -166,7 +168,6 @@
     }
 }
 
-
 .teachers__card-name {
     font-size: 2.4rem;
     font-weight: 500;
@@ -176,7 +177,6 @@
         font-size: 2rem;
     }
 }
-
 
 .teachers__card-text {
     font-size: 1.8rem;
