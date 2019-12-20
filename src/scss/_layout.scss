@@ -21,6 +21,14 @@
     }
 }
 
+
+
+.inner-container {
+    margin: 0 auto;
+    max-width: var(--inner-container-max-width);
+    width: 100%;
+}
+
 .page-content {
     flex-grow: 1;
     display: flex;
@@ -34,6 +42,14 @@
     color: white;
     z-index: 500;
     padding-top: 2.8rem;
+    @include breakpoint(mobile) {
+        padding-bottom: 2.8rem;
+        min-height: auto;
+    }
+    @include breakpoint(small-mobile) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -42,6 +58,7 @@
         top: 0;
         bottom: 0;
         background-color: var(--red);
+        z-index: -1;
     }
 
     &--absolute {
@@ -51,6 +68,7 @@
         top: 0;
         width: 100%;
         height: auto;
+        padding-bottom: 0;
         &::before {
             display: none;
         }

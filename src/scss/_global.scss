@@ -9,6 +9,7 @@
 :root {
     // Sizes
     --max-container-width: 1824px;
+    --inner-container-max-width: 1530px;
     --content-padding: 40px;
     
     @include breakpoint(small-mobile) {

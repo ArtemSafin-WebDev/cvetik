@@ -1,0 +1,187 @@
+.teachers {
+    margin-top: 14rem;
+    margin-bottom: 27rem;
+    @include breakpoint(desktop) {
+        margin-top: 8rem;
+        margin-bottom: 14rem;
+    }
+
+    @include breakpoint(small-mobile) {
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+}
+
+.teachers__heading {
+    font-size: 4.6rem;
+    font-weight: 600;
+    color: var(--superdark-violet);
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    text-align: center;
+    @include breakpoint(desktop) {
+        margin-bottom: 6rem;
+    }
+    @include breakpoint(tablet) {
+        font-size: 3.6rem;
+        
+    }
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    @include breakpoint(small-mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.teachers__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6.5rem -9rem;
+    @include breakpoint(desktop) {
+        margin: -3.5rem -5rem;
+    }
+}
+
+
+.teachers__list-item {
+    width: 100%;
+    padding: 6.5rem 9rem;
+    @include breakpoint(desktop) {
+        padding: 3.5rem 5rem;
+    }
+    &--half {
+        width: 50%;
+        @include breakpoint(mobile) {
+            width: 100%;
+        }
+    }
+    &:nth-child(1) {
+        .teachers__card-image-container {
+            border-color: #F04D53;
+        }
+    }
+    &:nth-child(2) {
+        .teachers__card-image-container {
+            border-color: #6A92F8;
+        }
+    }
+    &:nth-child(3) {
+        .teachers__card-image-container {
+            border-color: #C961E4;
+        }
+    }
+    &:nth-child(4) {
+        .teachers__card-image-container {
+            border-color: #FFC773;
+        }
+    }
+    &:nth-child(5) {
+        .teachers__card-image-container {
+            border-color: #7BD684;
+        }
+    }
+    &:nth-child(6) {
+        .teachers__card-image-container {
+            border-color: #8B28A6;
+        }
+    }
+    &:nth-child(7) {
+        .teachers__card-image-container {
+            border-color: #FFACBA;
+        }
+    }
+    &:nth-child(8) {
+        .teachers__card-image-container {
+            border-color: #FFCA64;
+        }
+    }
+   
+   
+}
+
+.teachers__card {
+    display: flex;
+    align-items: center;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+}
+
+.teachers__card-image-container {
+    width: 34.2rem;
+    height: 34.2rem;
+    flex-shrink: 0;
+    margin-right: 4.5rem;
+    position: relative;
+    border: 10px solid #E24F54;
+    border-radius: 50%;
+    overflow: hidden;
+    @include breakpoint(desktop) {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    @include breakpoint(tablet) {
+        width: 20rem;
+        height: 20rem;
+        margin-right: 3rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        margin-right: 0;
+        width: 30rem;
+        height: 30rem;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        width: 22rem;
+        height: 22rem;
+        border-width: 6px;
+    }
+}
+
+
+.teachers__card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+}
+
+
+.teachers__card-content {
+    width: 50%;
+    flex-grow: 1;
+    color: black;
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        margin-top: 3rem;
+    }
+}
+
+
+.teachers__card-name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    @include breakpoint(desktop) {
+        font-size: 2rem;
+    }
+}
+
+
+.teachers__card-text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    @include breakpoint(desktop) {
+        font-size: 1.6rem;
+    }
+}

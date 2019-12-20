@@ -1,0 +1,75 @@
+{% set title = "Контакты" %} {% extends "layout.html" %} {% block content %}
+
+<div class="inner-container">
+    <section class="contacts">
+        <h2 class="contacts__heading">
+            Контакты
+        </h2>
+        <div class="contacts__row">
+            <div class="contacts__left-column">
+                <div class="contacts__text-content">
+                    <p>
+                        <b>
+                            Городской округ Химки, поселок Старбеево
+                        </b>
+                    </p>
+                    <p>
+                        Проезд до пос. Старбеево через город Химки, 5 км от МКАД
+                    </p>
+                    <p>
+                        Едем по Ленинградскому шоссе до ул. Маяковского, проезжаем мост через ЖД и на первом светофоре после моста поворачиваем направо на ул. Победы, далее по указателям на Старбеево поворачиваем налево и выезжаем из Химок.
+                    </p>
+                    <p>
+                        <a href="tel:+79857699682">
+                            <b>Телефон: +7 985 769 96 82</b>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@zvetik7.ru">e-mail: info@zvetik7.ru</a>
+                    </p>
+                </div>
+            </div>
+            <div class="contacts__right-column">
+                <div class="contacts__map">
+                    <div class="js-yandex-map" data-coords="51.769899, 55.096479"></div>
+                </div>
+            </div>
+        </div>
+
+        <form class="contacts__form" method="POST" action="/" data-parsley-validate>
+            <img src="img/groups/znaiki.png" alt="" class="contacts__form-image" />
+            <div class="contacts__form-row">
+                <div class="contacts__form-left-column">
+                    <h3 class="contacts__form-heading">
+                        ФОРМА ОБРАТНОЙ СВЯЗИ
+                    </h3>
+                    <div class="contacts__form-input-row">
+                        <div class="contacts__form-input-wrapper">
+                            <input type="text" name="name" required placeholder="Имя" />
+                        </div>
+                        <div class="contacts__form-input-wrapper">
+                            <input type="email" name="email" required placeholder="E-mail" />
+                        </div>
+                        
+                    </div>
+                    <div class="contacts__form-input-row">
+                        <div class="contacts__form-input-wrapper">
+                            <textarea name="comment" placeholder="Сообщение"></textarea>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="contacts__form-right-column">
+                    <p class="contacts__form-description">
+                        Если у Вас остались вопросы - напишите нам и мы обязательно на них ответим!
+                    </p>
+                </div>
+            </div>
+            <button type="submit" class="contacts__form-btn">
+                ОТПРАВИТЬ
+            </button>
+        </form>
+    </section>
+</div>
+
+{% endblock %}

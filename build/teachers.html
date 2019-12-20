@@ -4,11 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d41198b4-79cf-4ff2-83a6-aaff2a77a15c&lang=ru_RU" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Главная страница
+            Наши педагоги
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -55,7 +56,7 @@
             <header class="page-header ">
                 <div class="container">
                     <div class="page-header__row">
-                        <img src="img/logos/mobile-logo.svg" alt="Мобильное лого" class="page-header__mobile-logo" width="118" />
+                        <a href="index.html" class="page-header__mobile-logo"><img src="img/logos/mobile-logo.svg" alt="Мобильное лого" width="118"/></a>
 
                         <div class="main-nav__overlay"></div>
                         <nav class="main-nav">
@@ -116,344 +117,222 @@
             </header>
             <main class="page-main">
                 <div class="container">
-                    <section class="top-slider js-top-slider">
-                        <button class="top-slider__button top-slider__button--prev">
-                            <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-left">
-                                <use xlink:href="#arrow-left"></use>
-                            </svg>
-                        </button>
-                        <div class="top-slider__content">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="top-slider__card top-slider__card--english">
-                                            <div class="top-slider__card-video">
-                                                <video width="700" poster="misc/video/english.jpg" playsinline muted>
-                                                    <source src="misc/video/english.mp4" type="video/mp4" />
-                                                    <source src="misc/video/english.webm" type="video/webm" />
-                                                    Ваш браузер не поддерживает видео
-                                                </video>
-                                            </div>
-                                            <div class="top-slider__card-content">
-                                                <h3 class="top-slider__card-heading">
-                                                    АНГЛИЙСКИЙ ЯЗЫК
-                                                </h3>
-                                                <p class="top-slider__subtitle">
-                                                    В наших садах используется билингвальный подход к изучению языка. Обучение ведётся по уникальной методике Talented and Gifted.
+                    <div class="inner-container">
+                        <section class="teachers">
+                            <h2 class="teachers__heading">
+                                НАШИ ПЕДАГОГИ
+                            </h2>
+                            <ul class="teachers__list">
+                                <li class="teachers__list-item">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Наталия Владимировна – заведующая клубом и мама одной из выпускниц детского клуба.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Уже в юности знала, что будет учителем, а когда пришло время поступления в ВУЗ, выбрала факультет дошкольной педагогики и психологии, училась только на «отлично». Закончила с красным дипломом,
+                                                    защитила диссертацию тоже с отличием.
                                                 </p>
-                                                <a href="#" class="top-slider__card-btn">
-                                                    Подробнее
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="top-slider__card top-slider__card--choreography">
-                                            <div class="top-slider__card-video">
-                                                <video width="700" poster="misc/video/dance.jpg" playsinline muted>
-                                                    <source src="misc/video/dance.mp4" type="video/mp4" />
-                                                    <source src="misc/video/dance.webm" type="video/webm" />
-                                                    Ваш браузер не поддерживает видео
-                                                </video>
-                                            </div>
-                                            <div class="top-slider__card-content">
-                                                <h3 class="top-slider__card-heading">
-                                                    ХОРЕОГРАФИЯ
-                                                </h3>
-                                                <p class="top-slider__subtitle">
-                                                    Занятия ведет настоящий профессионал влюбленный в свое дело. Детки нашего садика занимают первые места на танцевальных конкурсах.
+
+                                                <p>
+                                                    Имеет научные работы, за что была отмечена стипендией правительства Российской Федерации. К созданию своего дела шла долго, т.к. хотела создать такой детский сад, в котором будет хорошо всем детям
+                                                    любого возраста.
                                                 </p>
-                                                <a href="#" class="top-slider__card-btn">
-                                                    Подробнее
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="top-slider__card top-slider__card--robots">
-                                            <div class="top-slider__card-video">
-                                                <video width="700" poster="misc/video/robot.jpg" playsinline muted>
-                                                    <source src="misc/video/robot.mp4" type="video/mp4" />
-                                                    <source src="misc/video/robot.webm" type="video/webm" />
-                                                    Ваш браузер не поддерживает видео
-                                                </video>
-                                            </div>
-                                            <div class="top-slider__card-content">
-                                                <h3 class="top-slider__card-heading">
-                                                    РОБОТОТЕХНИКА
-                                                </h3>
-                                                <p class="top-slider__subtitle">
-                                                    На кружке дети могут по-новому увидеть окружающий их мир, проводя время над разработкой и оживлением самых разнообразных роботов
+                                                <p>
+                                                    Она собрала отличную команду профессионалов своего дела, которые любят детей и свою работу. Именно поэтому в ее клуб дети идут с огромной радостью.
                                                 </p>
-                                                <a href="#" class="top-slider__card-btn">
-                                                    Подробнее
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="top-slider__pagination"></div>
-                        </div>
-                        <button class="top-slider__button top-slider__button--next">
-                            <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-right">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
-                        </button>
-                    </section>
-                    <section class="benefits">
-                        <ul class="benefits__list">
-                            <li class="benefits__list-item">
-                                <div class="benefits__card">
-                                    <h4 class="benefits__card-title">
-                                        Уютно
-                                    </h4>
-                                    <div class="benefits__card-content">
-                                        <h5 class="benefits__card-subtitle">
-                                            Уютно
-                                        </h5>
-                                        <p class="benefits__card-text">
-                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="benefits__list-item">
-                                <div class="benefits__card">
-                                    <h4 class="benefits__card-title">
-                                        0,5 ГА
-                                    </h4>
-                                    <div class="benefits__card-content">
-                                        <h5 class="benefits__card-subtitle">
-                                            В собственности сада
-                                        </h5>
-                                        <p class="benefits__card-text">
-                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="benefits__list-item">
-                                <div class="benefits__card">
-                                    <h4 class="benefits__card-title">
-                                        Гибкость
-                                    </h4>
-                                    <div class="benefits__card-content">
-                                        <h5 class="benefits__card-subtitle">
-                                            Индивидуальный тарифный план
-                                        </h5>
-                                        <p class="benefits__card-text">
-                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="benefits__list-item">
-                                <div class="benefits__card">
-                                    <h4 class="benefits__card-title">
-                                        2-7
-                                    </h4>
-                                    <div class="benefits__card-content">
-                                        <h5 class="benefits__card-subtitle">
-                                            Разновозрастное взаимодействие детей
-                                        </h5>
-                                        <p class="benefits__card-text">
-                                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="our-groups js-our-groups-slider">
-                        <h2 class="our-groups__heading">
-                            Наши группы
-                        </h2>
-                        <div class="our-groups__slider">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="our-groups__card">
-                                            <div class="our-groups__card-image-container">
-                                                <img src="img/groups/ladushki.png" alt="" class="our-groups__card-image" />
-                                            </div>
-                                            <h5 class="our-groups__card-name">
-                                                Ладушки
-                                            </h5>
-                                            <p class="our-groups__card-age">
-                                                2-3 ГОДА
-                                            </p>
+                                </li>
+                                <li class="teachers__list-item">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="our-groups__card">
-                                            <div class="our-groups__card-image-container">
-                                                <img src="img/groups/zvezdocki.png" alt="" class="our-groups__card-image" />
-                                            </div>
-                                            <h5 class="our-groups__card-name">
-                                                Звездочки
-                                            </h5>
-                                            <p class="our-groups__card-age">
-                                                3-4 ГОДА
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="our-groups__card">
-                                            <div class="our-groups__card-image-container">
-                                                <img src="img/groups/luchicki.png" alt="" class="our-groups__card-image" />
-                                            </div>
-                                            <h5 class="our-groups__card-name">
-                                                Лучики
-                                            </h5>
-                                            <p class="our-groups__card-age">
-                                                4-5 ГОДА
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="our-groups__card">
-                                            <div class="our-groups__card-image-container">
-                                                <img src="img/groups/vishenki.png" alt="" class="our-groups__card-image" />
-                                            </div>
-                                            <h5 class="our-groups__card-name">
-                                                ВИШЕНКИ
-                                            </h5>
-                                            <p class="our-groups__card-age">
-                                                5-6 ГОДА
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="our-groups__card">
-                                            <div class="our-groups__card-image-container">
-                                                <img src="img/groups/znaiki.png" alt="" class="our-groups__card-image" />
-                                            </div>
-                                            <h5 class="our-groups__card-name">
-                                                Знайки
-                                            </h5>
-                                            <p class="our-groups__card-age">
-                                                6-7 ГОДА
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="services">
-                        <h2 class="services__heading">
-                            Услуги и цены
-                        </h2>
-                        <ul class="services__list">
-                            <li class="services__list-item">
-                                <div class="services__card">
-                                    <h3 class="services__card-heading">
-                                        Старт
-                                    </h3>
-                                    <p class="services__time">
-                                        8:00-19:00
-                                    </p>
-                                    <span class="services__divider"> </span>
-                                    <div class="services__content">
-                                        <p>
-                                            Четырехразовое питание. Сетка занятий по программе Васильевой.
-                                        </p>
-                                        <p>
-                                            <b>
-                                                Дополнительно оплачивается: плавание, хореография, английский язык, музыкальные занятия.
-                                            </b>
-                                        </p>
-                                    </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Анна Николаевна – молодой специалист, закончила университет психологии в Москве, начинала у нас работать как помощник воспитателя, но очень быстро поняла, что ее предназначение - воспитатель.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    В данной профессии Анна Николаевна раскрыла весь свой творческий потенциал. По результатам внутреннего мониторинга ее воспитанники превосходно владеют материалом как своего возраста, так и без труда
+                                                    осваивают программу подготовительного этапа к школе.
+                                                </p>
 
-                                    <p class="services__price">
-                                        30 000 руб./месяц
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="services__list-item">
-                                <div class="services__card">
-                                    <h3 class="services__card-heading">
-                                        Базовый
-                                    </h3>
-                                    <p class="services__time">
-                                        8:00-20:00
-                                    </p>
-                                    <span class="services__divider"> </span>
-                                    <div class="services__content">
-                                        <p>
-                                            Пятиразовое питание. Сетка занятий по программе Васильевой.
-                                        </p>
-                                        <p>
-                                            <b>
-                                                Включены: хореография, английский язык, бассейн – по 1 одному занятию в неделю.
-                                            </b>
-                                        </p>
+                                                <p>
+                                                    Анна Николаевна - любимица всех воспитанников, и не только своей группы. Она прекрасно ладит с детьми, чудесно организует занятия и развлекательные моменты, не забывая о дисциплине и воспитании.
+                                                    Анна Николаевна - молодая мама чудесного сына Акима, с которым она любит путешествовать и вкусно готовить.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <p class="services__price">
-                                        37 000 руб./месяц
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="services__list-item">
-                                <div class="services__card">
-                                    <h3 class="services__card-heading">
-                                        Премиум
-                                    </h3>
-                                    <p class="services__time">
-                                        8:00-20:00
-                                    </p>
-                                    <span class="services__divider"> </span>
-                                    <div class="services__content">
-                                        <p>
-                                            Пятиразовое питание. Сетка занятий по программе Васильевой.
-                                        </p>
-                                        <p>
-                                            Включены: хореография, английский язык, бассейн – по 2 занятия в неделю.
-                                        </p>
-                                        <p>
-                                            <b>
-                                                В стоимость входят мастер-классы по флористике, мыловарению, бижутерии.
-                                            </b>
-                                        </p>
+                                </li>
+                                <li class="teachers__list-item">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Лариса Алексеевна – талантливый хорерграф с огромным опытом работы.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    В профессии очень давно, любит ее всем сердцем.
+                                                </p>
+                                                <p>
+                                                    Вернулась в коллектив после рождения дочери с новыми силами и творческими идеями.
+                                                </p>
+                                                <p>
+                                                    Постановка ее танцев на праздничных мероприятиях вызывает восторг со стороны родителей воспитанников. В ближайших планах - покорение вершин всех творческих конкурсов с воспитанниками нашего детского
+                                                    сада.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <p class="services__price">
-                                        43 000 руб./месяц
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="services__list-item">
-                                <div class="services__card">
-                                    <h3 class="services__card-heading">
-                                        Гибкий
-                                    </h3>
-                                    <p class="services__time">
-                                        по договоренности
-                                    </p>
-                                    <span class="services__divider"> </span>
-                                    <div class="services__content">
-                                        <p>
-                                            Мы готовы обсуждать различные варианты графиков, питания и системы индивидуального обучения для Вашего ребёнка.
-                                        </p>
-                                        <p>
-                                            <b>
-                                                Перейдите к подробному описанию наших услуги и заполните форму обратной связи. Наши специалисты свяжутся с Вами для обсуждения всех условий.
-                                            </b>
-                                        </p>
+                                </li>
+                                <li class="teachers__list-item">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Надежда Александровна – преподаватель физкультуры, а также тренер по художественной гимнастике.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Молодая спортсменка и педагог, мама двоих прекрасных детей, вошла в наш коллектив и очень полюбила наших воспитанников.
+                                                </p>
+                                                <p>
+                                                    С некоторых пор, любимым уроком наших детей по вторникам и четвергам стала физкультура. В этом году мы открыли новое направление для девочек в нашем уютном саду, это художественная гимнастика. Его
+                                                    ведет мастер спорта по художественной гимнастике Надежда Александровна.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <p class="services__price">
-                                        по договоренности
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="#" class="services__more-btn">
-                            Подробнее
-                        </a>
-                    </section>
+                                </li>
+                                <li class="teachers__list-item">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Юлия Викторовна – молодой специалист в области медицины. Закончила медицинское училище с присвоением квалификации медицинская сестра.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Долгое время работала по специальности в ДОУ, в рамках повышения квалификации приобрела дополнительную специальность – детского массажиста. Под ее ласковыми руками детки сразу расслабляются и
+                                                    засыпают, что еще раз подчеркивает правильность выполнения любого массажа. В настоящее время Юлия Викторовна курирует наш детский клуб как медицинская сестра, и успешно ведет занятия по ЛФК –
+                                                    лечебной физкультуре. Занятия доставляют ребятам особую радость, т.к. именно на них они с большим удовольствием бегают, прыгают, скачут, осваивают новые умения и навыки.
+                                                </p>
+                                                <p>
+                                                    С недавнего времени Юлия Викторовна - уже воспитатель не только по призванию, но и по профессии. Юлия Викторовна получила диплом по специальности "педагог-дошкольник".
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="teachers__list-item">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Светлана Сергеевна - воспитатель раннего дошкольного возраста.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Светлана Сергеевна в начале трудовой деятельности окончила педагогическое училище.
+                                                </p>
+                                                <p>
+                                                    После его окончания поступила на работу в ДОУ, осталась в профессии воспитателя. Более 15 лет работы было отдано малышам возраста 2-3 лет (ранний дошкольный возраст)
+                                                </p>
+                                                <p>
+                                                    Этот возраст считает самым благодарным, т.к. малышки впитывают информацию как губки, сразу же дают отдачу эмоциями и не умеют лукавить. Её воспитанники - самые маленькие посетители нашего клуба.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="teachers__list-item teachers__list-item--half">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Алла Александровна.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Помощник воспитателя.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="teachers__list-item teachers__list-item--half">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Ирина Александровна.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Музыкальный руководитель нашего детского сада.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="teachers__list-item teachers__list-item--half">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Вера Селиверстовна.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Логопед нашего детского сада
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="teachers__list-item teachers__list-item--half">
+                                    <div class="teachers__card">
+                                        <div class="teachers__card-image-container">
+                                            <img src="img/photo.jpg" alt="Фото" class="teachers__card-image" />
+                                        </div>
+                                        <div class="teachers__card-content">
+                                            <h4 class="teachers__card-name">
+                                                Анна Сергеевна.
+                                            </h4>
+                                            <div class="teachers__card-text">
+                                                <p>
+                                                    Учитель английского языка.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
             </main>
             <footer class="page-footer">

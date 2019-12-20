@@ -1,0 +1,187 @@
+.holidays {
+    margin-top: 14rem;
+    margin-bottom: 27rem;
+
+    @include breakpoint(desktop) {
+        margin-top: 8rem;
+        margin-bottom: 14rem;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+    }
+
+    @include breakpoint(small-mobile) {
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+}
+
+.holidays__heading {
+    font-size: 4.6rem;
+    font-weight: 600;
+    color: var(--superdark-violet);
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    text-align: center;
+    @include breakpoint(desktop) {
+        margin-bottom: 6rem;
+    }
+    @include breakpoint(tablet) {
+        font-size: 3.6rem;
+    }
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    @include breakpoint(small-mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+.holidays__text {
+    column-count: 3;
+    column-gap: 4.8rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+    color: black;
+    margin-bottom: 10rem;
+
+    @include breakpoint(tablet) {
+        column-count: 2;
+        column-gap: 3rem;
+    }
+
+    @include breakpoint(small-mobile) {
+        column-count: 1;
+        margin-bottom: 5rem;
+    }
+    p {
+        break-inside: avoid;
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::first-letter {
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+
+.holidays__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -3rem -2.4rem;
+
+    @include breakpoint(tablet) {
+        margin: -2rem -1.5rem;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        margin: -1.5rem;
+    }
+}
+
+
+.holidays__list-item {
+    padding: 3rem 2.4rem;
+    width: 33.33%;
+    @include breakpoint(tablet) {
+        padding: 2rem 1.5rem;
+        width: 50%;
+    }
+
+    @include breakpoint(small-mobile) {
+        padding: 1.5rem;
+        width: 100%;
+    }
+}
+
+
+.holidays__card {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+    display: block;
+
+
+    &::after {
+        content: '';
+        display: block;
+        padding-bottom: 82%;
+    }
+    
+    &:link,
+    &:visited {
+        color: white;
+    }
+}
+
+
+
+.holidays__card-image-container {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.holidays__card-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    @include objectFitCover();
+}
+
+
+
+.holidays__card-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1.8rem 2rem;
+    background-color: #6A92F8;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    text-align: center;
+
+    @include breakpoint(desktop) {
+        font-size: 2rem;
+    }
+    @include breakpoint(laptop) {
+        font-size: 1.6rem;
+    }
+    &--blue {
+        background-color: #6A92F8;
+    }
+    &--red {
+        background-color: #F04D53;
+    }
+    &--orange {
+        background-color: #FFCA64;
+    }
+    &--light-violet {
+        background-color: #EB9FFF;
+    }
+    &--violet {
+        background-color: #C961E4;
+    }
+    &--pink {
+        background-color: #FFACBA;
+    }
+    &--green {
+        background-color: #7BD684;
+    }
+}

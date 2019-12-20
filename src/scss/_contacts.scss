@@ -1,0 +1,429 @@
+.contacts {
+    
+    margin-top: 14rem;
+    margin-bottom: 27rem;
+
+    
+   
+    @include breakpoint(desktop) {
+        margin-top: 8rem;
+        margin-bottom: 14rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+    }
+
+    @include breakpoint(small-mobile) {
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+}
+
+
+
+.contacts__heading {
+    font-size: 4.6rem;
+    font-weight: 600;
+    color: var(--superdark-violet);
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    text-align: center;
+    @include breakpoint(desktop) {
+        margin-bottom: 6rem;
+    }
+    @include breakpoint(tablet) {
+        font-size: 3.6rem;
+        
+    }
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    @include breakpoint(small-mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+.contacts__row {
+    display: flex;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+}
+
+
+
+.contacts__left-column {
+    width: 60%;
+    flex-grow: 1;
+    margin-right: 8.5rem;
+    @include breakpoint(laptop) {
+        width: 56%;
+    }
+
+    @include breakpoint(tablet) {
+        margin-right: 4rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+
+.contacts__right-column {
+    width: 67.5rem;
+    width: 37%;
+    flex-shrink: 0;
+
+    @include breakpoint(laptop) {
+        width: 44%;
+    }
+
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin-top: 4rem;
+    }
+}
+
+
+.contacts__map {
+    position: relative;
+    background-color: lightgrey;
+    
+    &::after {
+        content: '';
+        width: 100%;
+        display: block;
+        padding-bottom: 80%;
+        @include breakpoint(mobile) {
+            padding-bottom: 56.25%;
+        }
+
+        @include breakpoint(small-mobile) {
+            padding-bottom: 100%;
+        }
+    }
+
+    > div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.contacts__text-content {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: black;
+    @include breakpoint(laptop) {
+        font-size: 2rem;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+    }
+    > * {
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        margin: 2.4rem 0;
+        @include breakpoint(mobile) {
+            margin: 1.6rem 0;
+        }
+    }
+}
+
+
+
+.contacts__form {
+    position: relative;
+    margin-top: 35rem;
+    margin-bottom: 16.5rem;
+    text-align: center;
+
+
+    @include breakpoint(desktop) {
+        margin-top: 25rem;
+        margin-bottom: 8rem;
+    }
+
+
+    @include breakpoint(tablet) {
+        margin-top: 16rem;
+    }
+}
+
+
+.contacts__form-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -25rem;
+    width: 25rem;
+    z-index: -1;
+    transform: rotate(-15deg);
+    @include breakpoint(desktop) {
+        width: 20rem;
+        margin-top: -20rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        width: 15rem;
+        margin-top: -15rem;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        width: 10rem;
+        margin-top: -10rem;
+    }
+}
+
+
+.contacts__form-row {
+    background-color: #FFCA64;
+    color: white;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    @include breakpoint(tablet) {
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        padding: 3rem 0;
+    }
+
+    @include breakpoint(small-mobile) {
+        padding-bottom: 1.5rem;
+        
+    }
+    
+}
+
+
+.contacts__form-left-column {
+    width: 60%;
+    padding-left: 9.5rem;
+    padding-right: 6rem;
+    @include breakpoint(laptop) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-right: 0;
+    }
+
+    @include breakpoint(tablet) {
+        width: 100%;
+
+        padding: 0 4rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        padding: 0 3rem;
+    }
+
+
+
+    @include breakpoint(small-mobile) {
+        padding: 0 1.5rem;
+    }
+}
+
+
+.contacts__form-right-column {
+    width: 40%;
+    padding: 0 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(laptop) {
+        padding: 0 3rem;
+        padding-left: 0;
+        
+    }
+
+    @include breakpoint(tablet) {
+        width: 100%;
+        padding: 0 4rem;
+        padding-top: 4rem;
+        display: none;
+    }
+}
+
+
+.contacts__form-heading {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    @include breakpoint(desktop) {
+        margin-bottom: 4rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 3.2rem;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+
+.contacts__form-input-row {
+    display: flex;
+    margin-bottom: 3rem;
+    @include breakpoint(small-mobile) {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+        border: none;
+        background: transparent;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        font: inherit;
+        font-size: 1.8rem;
+        padding: 3rem;
+        color: black;
+        display: block;
+        @include breakpoint(mobile) {
+            font-size: 1.6rem;
+            border-radius: 1.5rem;
+        }
+
+        @include breakpoint(small-mobile) {
+            padding: 2rem 2rem;
+        }
+        @include placeholder {
+            color: #808080;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+
+            @include breakpoint(mobile) {
+                font-size: 1.6rem;
+               
+            }
+        }
+       
+    }
+
+    textarea {
+        height: 30.1rem;
+    }
+}
+
+
+
+.contacts__form-input-wrapper {
+    width: 30%;
+    flex-grow: 1;
+    margin-right: 8rem;
+    @include breakpoint(small-mobile) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .parsley-errors-list {
+        text-align: left;
+        color: var(--blue);
+        // color: white;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+
+        @include breakpoint(mobile) {
+            font-size: 1.2rem;
+            margin-top: .5rem;
+        }
+    }
+
+    @include breakpoint(laptop) {
+        margin-right: 4rem;
+    }
+}
+
+
+
+.contacts__form-description {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    @include breakpoint(desktop) {
+        font-size: 3.2rem;
+    }
+}
+
+
+
+.contacts__form-btn {
+    background-color: #6a92f8;
+    color: white;
+    border-radius: 2.5rem;
+    text-align: center;
+    padding: 0.9em 4.8rem;
+    font-weight: 700;
+    font-family: var(--roboto);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 6.5rem;
+    user-select: none;
+    transition: background-color 0.2s;
+    @include breakpoint(small-mobile) {
+        
+        margin-top: 3rem;
+    }
+
+
+
+    
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: darken(#6a92f8, 7%);
+    }
+}

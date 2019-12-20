@@ -38,7 +38,7 @@
         }
     }
     &:nth-child(1) {
-        @include breakpoint(laptop) {
+        @include breakpointMF(laptop) {
             .no-touch &:hover,
             .touch &:active {
                 .benefits__card-subtitle {
