@@ -59,11 +59,12 @@ ul {
 }
 
 ol {
+    list-style: none;
     counter-reset: ordered-list;
     li {
         counter-increment: ordered-list;
         &::before {
-            content: counter(ordered-list) '.';
+            content: counter(ordered-list) '. ';
         }
     }
 }
