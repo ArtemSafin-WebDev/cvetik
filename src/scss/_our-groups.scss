@@ -106,6 +106,7 @@
     padding-bottom: 9rem;
     width: 100%;
     position: relative;
+    display: block;
     @include breakpoint(desktop) {
         padding-bottom: 6rem;
     }

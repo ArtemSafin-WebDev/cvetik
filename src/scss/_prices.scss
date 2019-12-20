@@ -785,3 +785,115 @@
         margin-top: 2rem;
     }
 }
+
+
+
+.prices__plans-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, .3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility 0s linear .3s;
+    &.shown {
+        opacity: 1;
+        visibility: visible;
+        transition: all .3s;
+    }
+
+
+    &--violet {
+        .prices__plans-modal-heading {
+            color: #C961E4;
+        }
+
+        .prices__plans-modal-content em {
+            color: #C961E4;
+        }
+    }
+}
+
+
+.prices__plans-modal-inner {
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(black, .25);
+    max-width: 42rem;
+    padding-left: 5.8rem;
+    padding-right: 5.8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: black;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    max-height: 100%;
+    @include breakpoint(small-mobile) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+
+.prices__plans-modal-close {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    svg {
+        fill: #9A9A9A;
+        width: 2.4rem;
+        height: 2.4rem;
+        display: block;
+        transition: fill .2s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: var(--red);
+        }
+    }
+}
+
+
+.prices__plans-modal-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #658FF9;
+    margin-bottom: 2rem;
+}
+
+.prices__plans-modal-content {
+    font-size: 1.4rem;
+    line-height: 1.9;
+    font-family: var(--roboto);
+    text-align: left;
+    em {
+        color: #658FF9;
+        font-style: normal;
+    }
+}
+
+
+.prices__attention {
+    font-size: 1.4rem;
+    line-height: 1.9;
+    color: #88419B;
+    font-family: var(--roboto);
+    margin-top: 2rem;
+}
+
+

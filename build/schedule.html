@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d41198b4-79cf-4ff2-83a6-aaff2a77a15c&lang=ru_RU" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="css/styles.min.css" />
+        <title>
+            Расписание
+        </title>
+    </head>
+    <body class="no-touch" ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <symbol viewBox="0 0 14.11 23.53" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M14.11 1.51L12.8 0 .69 10.48a2 2 0 000 3.06l12.09 10L14.09 22 2 12z" /></symbol>
+                <symbol viewBox="0 0 14.11 23.53" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M13.38 10L1.29 0 0 1.54l12.09 10L0 22l1.31 1.51 12.11-10.46a2.05 2.05 0 00.69-1.54 2 2 0 00-.73-1.51z" /></symbol>
+                <symbol viewBox="0 0 14 14" id="burger-close" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.4L12.6 0 7 5.6 1.4 0 0 1.4 5.6 7 0 12.6 1.4 14 7 8.4l5.6 5.6 1.4-1.4L8.4 7z" style="isolation:isolate" fill-rule="evenodd" /></symbol>
+                <symbol viewBox="0 0 27.6 16" id="burger-open" xmlns="http://www.w3.org/2000/svg"><path d="M26.6 2H1a1 1 0 010-2h25.6a1 1 0 010 2zm0 7H1a1 1 0 010-2h25.6a1 1 0 010 2zm0 7H1a1 1 0 010-2h25.6a1 1 0 010 2z" /></symbol>
+                <symbol id="instagram" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .ecls-1 {
+                                fill: none;
+                            }
+                        </style>
+                    </defs>
+                    <path
+                        class="ecls-1"
+                        d="M23.26 10.36a3.72 3.72 0 00-1.39-.92A5.46 5.46 0 0020 9.07C19.16 9 18.89 9 16.81 9H13.6a6.62 6.62 0 00-1.92.44 3.93 3.93 0 00-1.39.92 3.84 3.84 0 00-.89 1.42 5.83 5.83 0 00-.4 1.93v6.58a5.83 5.83 0 00.4 1.93 4.06 4.06 0 00.89 1.42 3.72 3.72 0 001.39.92 5.29 5.29 0 001.88.37H20a5.3 5.3 0 001.89-.37 4.16 4.16 0 001.39-.92 3.84 3.84 0 00.89-1.42 5.79 5.79 0 00.36-1.93v-6.58a5.55 5.55 0 00-.36-1.93 4.06 4.06 0 00-.91-1.42zm-.1 6.64v3.22a5.37 5.37 0 01-.27 1.49 2 2 0 01-.59.91 2.52 2.52 0 01-.9.61 4.2 4.2 0 01-1.45.28h-6.29a4.45 4.45 0 01-1.45-.28 1.83 1.83 0 01-.89-.61 2.77 2.77 0 01-.6-.91 4.45 4.45 0 01-.26-1.49v-6.47a5 5 0 01.26-1.49 2 2 0 01.6-.92 2.72 2.72 0 01.89-.61 4.54 4.54 0 011.45-.27H20a4.83 4.83 0 011.45.27 2.07 2.07 0 01.9.61 2.64 2.64 0 01.59.92 4.73 4.73 0 01.27 1.49z"
+                    />
+                    <path class="ecls-1" d="M20.94 11.73a.92.92 0 00-.92.86.93.93 0 101.85.14v-.09a.91.91 0 00-.93-.91zM16.8 12.9a4 4 0 00-4 4v.1a4 4 0 003.9 4.1h.1a4.1 4.1 0 000-8.2zm0 6.74a2.64 2.64 0 112.58-2.7V17a2.61 2.61 0 01-2.57 2.64z" />
+                    <path class="ecls-1" d="M17 1a16 16 0 1016 16A16 16 0 0017 1zm0 31a15 15 0 1115-15 15 15 0 01-15 15zm-.2-19.1h.01-.01z" />
+                    <path d="M17 0a17 17 0 1017 17A17 17 0 0017 0zm0 33a16 16 0 1116-16 16 16 0 01-16 16z" />
+                    <path
+                        d="M22.3 11.34a2.07 2.07 0 00-.9-.61 4.83 4.83 0 00-1.4-.27h-6.34a4.54 4.54 0 00-1.45.27 2.72 2.72 0 00-.89.61 2 2 0 00-.6.92 5 5 0 00-.26 1.49v6.44a4.45 4.45 0 00.26 1.49 2.77 2.77 0 00.6.91 1.83 1.83 0 00.89.61 4.45 4.45 0 001.45.28H20a4.2 4.2 0 001.45-.28 2.52 2.52 0 00.9-.61 2 2 0 00.59-.91 5.37 5.37 0 00.27-1.49v-6.44a4.73 4.73 0 00-.27-1.49 2.64 2.64 0 00-.64-.92zm-5.5 9.76h-.1a4 4 0 01-3.9-4.1v-.11a4 4 0 014-4 4.1 4.1 0 010 8.2zm5.07-8.37a.93.93 0 11-1.87-.14.93.93 0 011.85.05z"
+                    />
+                    <path d="M16.69 14.36a2.64 2.64 0 00.12 5.28A2.61 2.61 0 0019.39 17v-.06a2.64 2.64 0 00-2.7-2.58z" />
+                    <path
+                        d="M17 2a15 15 0 1015 15A15 15 0 0017 2zm7.51 15v3.29a5.79 5.79 0 01-.36 1.93 3.84 3.84 0 01-.89 1.42 4.16 4.16 0 01-1.39.92 5.3 5.3 0 01-1.89.37h-6.42a5.29 5.29 0 01-1.88-.37 3.72 3.72 0 01-1.39-.92 4.06 4.06 0 01-.89-1.42 5.83 5.83 0 01-.4-1.93v-6.58a5.83 5.83 0 01.4-1.93 3.84 3.84 0 01.89-1.42 3.93 3.93 0 011.39-.92A6.62 6.62 0 0113.6 9h3.21c2.08 0 2.35 0 3.19.07a5.46 5.46 0 011.87.37 3.72 3.72 0 011.39.92 4.06 4.06 0 01.89 1.42 5.55 5.55 0 01.36 1.93z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 34 34" id="whatsapp" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 0a17 17 0 1017 17A17 17 0 0017 0zm0 33a16 16 0 1116-16 16 16 0 01-16 16z" />
+                    <path d="M17 2a15 15 0 1015 15A15 15 0 0017 2zm7.53 14.53a7.7 7.7 0 01-7.64 7.76 7.57 7.57 0 01-3.71-1L9 24.69l1.39-4.16a7.76 7.76 0 01-1.09-4v-.34a7.64 7.64 0 0115.28.13z" />
+                    <path
+                        d="M16.85 10a6.48 6.48 0 00-6.38 5.89 4.72 4.72 0 000 .65 6.69 6.69 0 001.22 3.83l-.79 2.44 2.45-.81a6.41 6.41 0 003.54 1.09 6.48 6.48 0 006.42-6.54v-.51A6.48 6.48 0 0016.85 10zm3.78 9.21a1.88 1.88 0 01-1.26.92c-.33 0-.33.27-2.25-.47a7.75 7.75 0 01-3.21-2.89 5 5 0 01-.66-1.32 2 2 0 01-.1-.64 2.19 2.19 0 01.66-1.59.61.61 0 01.5-.24h.36c.1 0 .27-.07.43.31s.56 1.32.6 1.42a.44.44 0 010 .34 1.17 1.17 0 00-.13.24s0 .06-.07.1-.2.24-.3.34a.29.29 0 00-.06.37 4.83 4.83 0 001 1.32 5.26 5.26 0 001.52.95c.17.1.3.1.4 0s.46-.54.59-.75.27-.17.43-.1 1.1.51 1.29.61a1.22 1.22 0 01.34.17 1.44 1.44 0 01-.08.9z"
+                    />
+                </symbol>
+            </svg>
+        </div>
+
+        <div class="page-content">
+            <header class="page-header ">
+                <div class="container">
+                    <div class="page-header__row">
+                        <a href="index.html" class="page-header__mobile-logo"><img src="img/logos/mobile-logo.svg" alt="Мобильное лого" width="118"/></a>
+
+                        <div class="main-nav__overlay"></div>
+                        <nav class="main-nav">
+                            <button class="main-nav__close-btn">
+                                <svg width="16" height="16" aria-hidden="true" class="icon icon-burger-close">
+                                    <use xlink:href="#burger-close"></use>
+                                </svg>
+                            </button>
+                            <ul class="main-nav__list">
+                                <li class="main-nav__list-item">
+                                    <a href="program.html" class="main-nav__link">
+                                        Программа
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="prices.html" class="main-nav__link">
+                                        Услуги и цены
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="#" class="main-nav__link">
+                                        Режим дня
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item main-nav__list-item--main">
+                                    <a href="index.html" class="main-nav__link main-nav__link--main">
+                                        <picture>
+                                            <source srcset="img/logos/tablet-logo.svg" media="(max-width: 1024px)" />
+                                            <img src="img/logos/desktop-logo.svg" alt="Логотип" />
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="holidays-gallery.html" class="main-nav__link">
+                                        Фотогалерея
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item">
+                                    <a href="contacts.html" class="main-nav__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item main-nav__list-item--phone">
+                                    <a href="tel:+79857699682" class="main-nav__link main-nav__link--phone">
+                                        +7 985-769-96-82
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <button class="page-header__burger">
+                            <svg width="26" height="14" aria-hidden="true" class="icon icon-burger-open">
+                                <use xlink:href="#burger-open"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="page-main">
+                <div class="container">
+                    <div class="inner-container">
+                        <section class="schedule">
+                            <h2 class="schedule__heading">
+                                Ладушки
+                            </h2>
+                            <div class="schedule__group-info">
+                                <p>
+                                    Ранний возраст – один из самых главных возрастов развития ребенка. В нем формируется мышление, устанавливается эмоциональная сфера. Ведущий тип деятельности – предметная. Она оказывает влияние на все сферы психики
+                                    детей.
+                                </p>
+                                <p>
+                                    Заботливые и терпеливые педагоги проведут установку крупной и мелкой моторики, активизируют пассивный и активный словарь ребенка, научат играть со сверстниками, познакомят с образовательным миром раннего
+                                    дошкольника (основная палитра красок, формы, размеры, заучивание наизусть стихов, звукопроизношение и многое другое).
+                                </p>
+                                <p>
+                                    В этом возрасте происходит развитие восприятия. Это время нужно использовать для максимального становления личности малыша. Именно в это время Вашему ребенку необходим детский сад и содружество таких же как и он. В
+                                    этом чудесном возрасте детки приучаются к азам самостоятельности (держание ложки, мытье рук, игра рядом). Коллектив малышей позволит крохе быстрее заговорить, принять правила поведения в коллективе.
+                                </p>
+                                <p>
+                                    Этот возраст предназначен для вхождения в детский коллектив, так как нахождение в среде сверстников будет толкать ребенка в развитии. Так что если у вас остались какие-то вопросы относительно столь чудесного
+                                    возраста – звоните. Мы ответим Вам и примем ваше чадо в нашу дружную семью «Ладушек».
+                                </p>
+                            </div>
+                            <h2 class="schedule__heading">
+                                РАСПИСАНИЕ
+                            </h2>
+                            <div class="schedule__table">
+                                <ul class="schedule__list">
+                                    <li class="schedule__list-item">
+                                        <div class="schedule__card schedule__card--violet">
+                                            <p class="schedule__card-top">
+                                                Понедельник
+                                            </p>
+                                            <div class="schedule__content">
+                                                <span>Музыка</span>
+                                                <span>
+                                                    Чтение худ. литературы
+                                                </span>
+                                                <span>
+                                                    Конструирование
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="schedule__list-item">
+                                        <div class="schedule__card schedule__card--red">
+                                            <p class="schedule__card-top">
+                                                Вторник
+                                            </p>
+                                            <div class="schedule__content">
+                                                <span>Хореография</span>
+                                                <span>
+                                                    ФЭМП
+                                                </span>
+                                                <span>
+                                                    Аппликация
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="schedule__list-item">
+                                        <div class="schedule__card schedule__card--blue">
+                                            <p class="schedule__card-top">
+                                                Среда
+                                            </p>
+                                            <div class="schedule__content">
+                                                <span>Музыка</span>
+                                                <span>
+                                                    Развитие речи
+                                                </span>
+                                                <span>
+                                                    Физкультура
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="schedule__list-item">
+                                        <div class="schedule__card schedule__card--pink">
+                                            <p class="schedule__card-top">
+                                                Четверг
+                                            </p>
+                                            <div class="schedule__content">
+                                                <span>Хореография</span>
+                                                <span>
+                                                    Окружающий мир
+                                                </span>
+                                                <span>
+                                                    Лепка
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="schedule__list-item">
+                                        <div class="schedule__card schedule__card--green">
+                                            <p class="schedule__card-top">
+                                                Пятница
+                                            </p>
+                                            <div class="schedule__content">
+                                                <span>Физкультура</span>
+                                                <span>
+                                                    Рисование
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="schedule__info">
+                                <div class="schedule__info-item">
+                                    <div class="schedule__info-card">
+                                        <h5 class="schedule__info-card-heading">Режим дня:</h5>
+                                        <div class="schedule__info-card-content">
+                                            <p><b>8:00 – 9:50</b> – прием детей</p>
+                                            <p><b>8:50 – 9:00</b> – утренняя гимнастика</p>
+                                            <p><b>9:00 – 9:15</b> – завтрак</p>
+                                            <p><b>9:15 – 09:45</b> – первое занятие</p>
+                                            <p><b>10:00 – 10:25</b> – второе занятие</p>
+                                            <p><b>11:00 – 11:15</b> – второй завтрак</p>
+                                            <p><b>11:15 – 11:30</b> – подготовка к прогулке</p>
+                                            <p><b>11:30 – 12:30</b> – прогулка</p>
+                                            <p><b>12:30 – 12:45</b> – возвращение с погулки, мытье рук</p>
+                                            <p><b>12:45 – 13:30</b> – обед</p>
+                                            <p><b>13:30 – 16:00</b> – дневной сон</p>
+                                            <p><b>16:00</b> – подъем</p>
+                                            <p><b>16:15 – 16:30</b> - полдник</p>
+                                            <p><b>16:30 – 17:00</b> – свободная деятельность</p>
+                                            <p><b>17:00 – 18:00</b> – вечерняя прогулка</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule__info-item">
+                                    <div class="schedule__info-card">
+                                        <h5 class="schedule__info-card-heading">Что нужно ладушкам?</h5>
+                                        <p class="schedule__info-card-dear-parents">
+                                            <b>
+                                                Уважаемые родители!
+                                            </b>
+                                        </p>
+                                        <p class="schedule__info-card-requirements">
+                                            Для комфортного пребывания вашего ребенка в детском саду нам необходимо, чтобы в его шкафчике были:
+                                        </p>
+                                        <ul class="schedule__info-card-requirements-list">
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                Несколько комплектов нижнего белья, физкультурная форма (шорты, майка, носочки со стоперами)
+                                            </li>
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                носочки
+                                            </li>
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                колготы
+                                            </li>
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                пижама
+                                            </li>
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                запасной комплект одежды
+                                            </li>
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                памперсы на период адаптации
+                                            </li>
+                                            <li class="schedule__info-card-requirements-list-item">
+                                                игрушка из дома на период адаптации
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schedule__literature">
+                                <p>
+                                    Список методической литературы, используемый в работе с группой Ладушки
+                                </p>
+                                <p>
+                                    Е.В Колесникова, «От звукоподражаний к словам» иллюстративный материал для развития речи у детей 2-3 лет», Москва 2009
+                                </p>
+                                <p>
+                                    Е.В. Колесникова «Развитие речи у детей 2-3 лет», Москва 2009
+                                </p>
+                                <p>
+                                    Е.В. Колесникова «Литературные тексты для детей 2-3 лет», Москва 2011
+                                </p>
+                                <p>
+                                    И.А. Помораева, В.А. Позина «Формирование элементарных математических представлений», система работы в первой младшей группе детского сада, Москва 2013
+                                </p>
+                                <p>
+                                    И.А. Курилова «Развитие сенсорных способностей у детей раннего возраста», Мозырь 2010
+                                </p>
+                                <p>
+                                    Е.А. Янушко «Лепка с детьми раннего возраста 1-3 года», Москва 2012
+                                </p>
+                                <p>
+                                    И.А. Лыкова «Изобразительная деятельность в детском саду, ранний возраст», Москва 2010
+                                </p>
+                                <p>
+                                    Е.А. Янушко «Рисование с детьми раннего возраста 1-3 года», Москва 2005
+                                </p>
+                                <p>
+                                    Е.Ю. Кихтеева «Рисуют малыши, игровые занятия с детьми 1-3 лет», Москва 2009
+                                </p>
+                                <p>
+                                    Е.А. Янушко «Аппликация с детьми раннего возраста 1-3 года», Москва 2010
+                                </p>
+                                <p>
+                                    Е.А. Янушко «Развитие речи у детей раннего возраста 1-3 года», Москва 2010
+                                </p>
+                                <p>
+                                    Хрестоматия для дошкольников 2-4 года, Москва 1999
+                                </p>
+                                <p>
+                                    А. Дорофеева «Школа 7 гномов, 2+», Москва 2012
+                                </p>
+                                <p>
+                                    И.В. Кравченко, Т.Л. Долгова «Прогулки в детском саду, младшая и средняя группы», Москва 2013
+                                </p>
+                                <p>
+                                    Л.В. Куцакова «Конструирование и художественный труд в детском саду», Москва 2013
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="page-footer__bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item">
+                                <a href="about-us.html" class="footer-nav__link">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="program.html" class="footer-nav__link">
+                                    Программа
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="prices.html" class="footer-nav__link">
+                                    Услуги и цены
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item footer-nav__list-item--main">
+                                <a href="index.html" class="footer-nav__link footer-nav__link--main">
+                                    <picture>
+                                        <source srcset="img/logos/tablet-logo.svg" media="(max-width: 1024px)" />
+                                        <img src="img/logos/desktop-logo.svg" alt="Логотип" />
+                                    </picture>
+                                </a>
+                                <ul class="footer-nav__social-list">
+                                    <li class="footer-nav__social-list-item">
+                                        <a href="#" class="footer-nav__social-link">
+                                            <svg width="34" height="34" aria-hidden="true" class="icon icon-whatsapp">
+                                                <use xlink:href="#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="footer-nav__social-list-item">
+                                        <a href="#" class="footer-nav__social-link">
+                                            <svg width="34" height="34" aria-hidden="true" class="icon icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="schedule.html" class="footer-nav__link">
+                                    Режим дня
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="holidays-gallery.html" class="footer-nav__link">
+                                    Фотогалерея
+                                </a>
+                            </li>
+                            <li class="footer-nav__list-item">
+                                <a href="contacts.html" class="footer-nav__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="page-footer__bottom-row">
+                        <div class="page-footer__location">
+                            Городской округ Химки,
+                            <br />
+                            поселок Старбеево
+                        </div>
+                        <div class="page-footer__contacts">
+                            <a href="tel:+79857699682" class="page-footer__phone-link">+7 985-769-96-82</a>
+                            <a href="mailto:info@zvetik7.ru" class="page-footer__email-link">e-mail: info@zvetik7.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="form-modal">
+                <div class="form-modal__inner">
+                    <button class="form-modal__close">
+                        <svg width="24" height="24" aria-hidden="true" class="icon icon-burger-close">
+                            <use xlink:href="#burger-close"></use>
+                        </svg>
+                    </button>
+                    <p class="form-modal__thank-you">
+                        Спасибо за заявку!
+                    </p>
+                    <p class="form-modal__subtitle">
+                        Наш менеджер свяжется с вами в ближайшее время.
+                    </p>
+                </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+            <script src="js/app.js"></script>
+        </div>
+    </body>
+</html>

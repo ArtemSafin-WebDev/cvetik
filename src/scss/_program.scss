@@ -7,7 +7,6 @@
         margin-bottom: 14rem;
     }
 
-
     @include breakpoint(tablet) {
         margin-top: 5.5rem;
     }
@@ -54,13 +53,11 @@
     color: black;
     margin-bottom: 10rem;
 
-
     &--about-us {
         column-count: 1 !important;
     }
 
     @include breakpoint(tablet) {
-       
         column-gap: 3rem;
     }
 
@@ -85,12 +82,10 @@
     b {
         font-weight: 500;
     }
-    
 }
 
 .program__subheading-block {
-  
-    color: #6A92F8;
+    color: #6a92f8;
     max-width: 100rem;
     margin: 0 auto;
     margin-bottom: 14rem;
@@ -128,13 +123,12 @@
     }
 }
 
-
 .program__subheading-divider {
     width: 48rem;
     height: 1rem;
     margin: 0 auto;
     display: block;
-    background: #C961E4;
+    background: #c961e4;
     margin-top: 7rem;
     &--about-us {
         width: 15rem;
@@ -150,9 +144,6 @@
     }
 }
 
-
-
-
 .program__blocks-list {
     display: flex;
     flex-wrap: wrap;
@@ -164,10 +155,8 @@
     @include breakpoint(small-mobile) {
         flex-wrap: nowrap;
         flex-direction: column;
-        
     }
 }
-
 
 .program__blocks-list-item {
     width: 50%;
@@ -175,7 +164,6 @@
     @include breakpoint(desktop) {
         padding: 0;
     }
-
 
     @include breakpoint(small-mobile) {
         width: 100%;
@@ -198,23 +186,21 @@
     }
 }
 
-
 .program__card-image {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     @include objectFitCover();
 }
-
 
 .program__card-title {
     text-transform: uppercase;
     font-size: 3.6rem;
     line-height: 1.5;
-    color: #8B28A6;
+    color: #8b28a6;
     margin-top: 7rem;
     text-align: center;
     @include breakpoint(desktop) {
@@ -231,10 +217,8 @@
     }
 }
 
-
 .program__card {
     display: block;
-
 
     .no-touch &:hover {
         .program__card-image {
@@ -245,6 +229,4 @@
         width: 80%;
         margin: 0 auto;
     }
-
-
 }
