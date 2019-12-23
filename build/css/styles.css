@@ -564,7 +564,8 @@ button.swiper-pagination-bullet {
 
 html {
   box-sizing: border-box;
-  font-size: 10px; }
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   min-width: 320px;
@@ -574,7 +575,8 @@ body {
   line-height: 1.2;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-tap-highlight-color: transparent; }
 
 ul {
   list-style: none; }
@@ -615,6 +617,10 @@ a {
   text-decoration: none; }
   a:link, a:visited {
     color: inherit; }
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent; }
 
 img {
   max-width: 100%;
@@ -848,8 +854,8 @@ img {
 
 .main-nav__close-btn {
   position: absolute;
-  top: 3rem;
-  right: 3.5rem;
+  top: 3.5rem;
+  right: 4rem;
   display: none;
   -webkit-tap-highlight-color: transparent; }
   @media only screen and (max-width: 768px) {
@@ -857,12 +863,16 @@ img {
       display: block; } }
   @media only screen and (max-width: 576px) {
     .main-nav__close-btn {
-      top: 2rem;
-      right: 2.5rem; } }
+      top: 3rem;
+      right: 3rem; } }
   .main-nav__close-btn svg {
     fill: #E24F54;
-    width: 16px;
-    height: 16px; }
+    width: 20px;
+    height: 20px; }
+    @media only screen and (max-width: 576px) {
+      .main-nav__close-btn svg {
+        width: 16px;
+        height: 16px; } }
 
 .main-nav__overlay {
   position: fixed;
