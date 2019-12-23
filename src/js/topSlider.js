@@ -29,9 +29,9 @@ export default function() {
             const currentSlide = swiperInstance.slides[swiperInstance.activeIndex];
             const video = currentSlide.querySelector('video');
 
-            if (window.matchMedia("(max-width: 576px)").matches) {
-                return;
-            }
+            // if (window.matchMedia("(max-width: 576px)").matches) {
+            //     return;
+            // }
 
             video.currentTime = 0;
             const onVideoEndHandler = function() {

@@ -1150,11 +1150,14 @@ img {
     height: 100%;
     background-color: var(--red); }
   .top-slider__card--english::before {
-    background-color: #e33c54; }
+    background-color: #e33c54;
+    background-color: #e1374b; }
   .top-slider__card--choreography::before {
-    background-color: #e7a5fd; }
+    background-color: #e7a5fd;
+    background-color: #e59afe; }
   .top-slider__card--robots::before {
-    background-color: #7f9ef3; }
+    background-color: #7f9ef3;
+    background-color: #7694f6; }
 
 .top-slider__card-content {
   margin-top: auto;
