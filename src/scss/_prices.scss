@@ -155,7 +155,7 @@
     align-items: center;
     justify-content: center;
     min-height: 13rem;
-    padding: 2.5rem;
+    padding: 1rem 2.5rem;
     color: white;
     font-size: 2.4rem;
     line-height: 1.5;
@@ -169,6 +169,10 @@
         min-height: 11rem;
     }
 
+    @include breakpoint(laptop) {
+        font-size: 1.6rem;
+    }
+ 
     @include breakpoint(tablet) {
         font-size: 1.4rem;
         padding: 2rem;

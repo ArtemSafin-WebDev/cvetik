@@ -18,11 +18,14 @@ export default function() {
                 type: 'bullets',
                 clickable: true
             },
+            // effect: 'fade',
+            // fadeEffect: {
+            //     crossFade: true
+            // },
             init: false
         };
 
         const swiperInstance = new Swiper(container, options);
-
 
         const videoHandler = function() {
             const slideIndex = swiperInstance.realIndex;
@@ -48,12 +51,12 @@ export default function() {
                         swiperInstance.slideNext();
                     } else {
                         swiperInstance.slidePrev();
-                    } 
+                    }
                 }
-            }
+            };
             video.addEventListener('ended', onVideoEndHandler);
             video.play();
-        }
+        };
 
         swiperInstance.on('init', videoHandler);
 
