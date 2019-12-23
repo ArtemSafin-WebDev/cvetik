@@ -1,4 +1,5 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import detectIt from 'detect-it';
 
 
 export default function() {
@@ -6,12 +7,16 @@ export default function() {
     const formModal = document.querySelector('.form-modal');
     const formModalClose = document.querySelector('.form-modal__close');
 
+    const scrollLockOptions = {
+        reserveScrollBarGap: true
+    }
+
     formModalBtns.forEach(btn => {
         btn.addEventListener('click', function(event) {
-            event.preventDefault();
+            // event.preventDefault();
             formModal.classList.add('shown');
-            disableBodyScroll(formModal);
-
+            if (window.matchMedia("(min-width: 769px)").matches && !detectIt.hasTouch) return;
+            disableBodyScroll(formModal, scrollLockOptions);
         })
     });
 

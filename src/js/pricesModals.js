@@ -1,7 +1,13 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import detectIt from 'detect-it';
 
 export default function() {
     const pricesItems = Array.from(document.querySelectorAll('.prices__plans-list-item'));
+
+    const scrollLockOptions = {
+        reserveScrollBarGap: true
+    }
+    
 
     pricesItems.forEach(item => {
         const modalOpen = item.querySelector('.prices__plans-card-regime-btn');
@@ -14,7 +20,9 @@ export default function() {
         modalOpen.addEventListener('click', function(event) {
             event.preventDefault();
             modal.classList.add('shown');
-            disableBodyScroll(modal);
+            if (window.matchMedia("(min-width: 769px)").matches && !detectIt.hasTouch) return;
+
+            disableBodyScroll(modal, scrollLockOptions);
         });
 
         modal.addEventListener('click', function(event) {
