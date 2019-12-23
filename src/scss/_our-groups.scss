@@ -55,6 +55,46 @@
     }
 
     .swiper-slide {
+        &:nth-child(1) {
+            .our-groups__card-image-container::before {
+                background-color: #658ff9;
+            }
+            .our-groups__card::before {
+                background-color: #658ff9;
+            }
+        }
+        &:nth-child(2) {
+            .our-groups__card-image-container::before {
+                background-color: #eb9fff;
+            }
+            .our-groups__card::before {
+                background-color: #eb9fff;
+            }
+        }
+        &:nth-child(3) {
+            .our-groups__card-image-container::before {
+                background-color: #ffc773;
+            }
+            .our-groups__card::before {
+                background-color: #ffc773;
+            }
+        }
+        &:nth-child(4) {
+            .our-groups__card-image-container::before {
+                background-color: #f04d53;
+            }
+            .our-groups__card::before {
+                background-color: #f04d53;
+            }
+        }
+        &:nth-child(5) {
+            .our-groups__card-image-container::before {
+                background-color: #ffacba;
+            }
+            .our-groups__card::before {
+                background-color: #ffacba;
+            }
+        }
         @include breakpoint(tablet) {
             width: auto;
         }
@@ -65,35 +105,8 @@
             &:last-child {
                 margin-bottom: 0;
             }
-
-            &:nth-child(1) {
-                .our-groups__card-image-container::before {
-                    background-color: #658FF9;
-                }
-            }
-            &:nth-child(2) {
-                .our-groups__card-image-container::before {
-                    background-color: #EB9FFF;
-                }
-            }
-            &:nth-child(3) {
-                .our-groups__card-image-container::before {
-                    background-color: #FFC773;
-                }
-            }
-            &:nth-child(4) {
-                .our-groups__card-image-container::before {
-                    background-color: #F04D53;
-                }
-            }
-            &:nth-child(5) {
-                .our-groups__card-image-container::before {
-                    background-color: #FFACBA;
-                }
-            }
         }
     }
-
 
     .swiper-wrapper {
         @include breakpoint(small-mobile) {
@@ -158,13 +171,11 @@
             display: none;
         }
 
-
         @include breakpoint(small-mobile) {
             display: block;
             transform: scale(1);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
-       
     }
     &::after {
         content: '';
@@ -223,7 +234,6 @@
         font-size: 1.6rem;
         margin-top: 2rem;
     }
-
 }
 
 .our-groups__card-age {

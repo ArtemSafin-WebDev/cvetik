@@ -1686,6 +1686,36 @@ img {
   .our-groups__slider .swiper-container {
     overflow: initial; } }
 
+.our-groups__slider .swiper-slide:nth-child(1) .our-groups__card-image-container::before {
+  background-color: #658ff9; }
+
+.our-groups__slider .swiper-slide:nth-child(1) .our-groups__card::before {
+  background-color: #658ff9; }
+
+.our-groups__slider .swiper-slide:nth-child(2) .our-groups__card-image-container::before {
+  background-color: #eb9fff; }
+
+.our-groups__slider .swiper-slide:nth-child(2) .our-groups__card::before {
+  background-color: #eb9fff; }
+
+.our-groups__slider .swiper-slide:nth-child(3) .our-groups__card-image-container::before {
+  background-color: #ffc773; }
+
+.our-groups__slider .swiper-slide:nth-child(3) .our-groups__card::before {
+  background-color: #ffc773; }
+
+.our-groups__slider .swiper-slide:nth-child(4) .our-groups__card-image-container::before {
+  background-color: #f04d53; }
+
+.our-groups__slider .swiper-slide:nth-child(4) .our-groups__card::before {
+  background-color: #f04d53; }
+
+.our-groups__slider .swiper-slide:nth-child(5) .our-groups__card-image-container::before {
+  background-color: #ffacba; }
+
+.our-groups__slider .swiper-slide:nth-child(5) .our-groups__card::before {
+  background-color: #ffacba; }
+
 @media only screen and (max-width: 1024px) {
   .our-groups__slider .swiper-slide {
     width: auto; } }
@@ -1695,17 +1725,7 @@ img {
     width: 100%;
     margin-bottom: 3rem; }
     .our-groups__slider .swiper-slide:last-child {
-      margin-bottom: 0; }
-    .our-groups__slider .swiper-slide:nth-child(1) .our-groups__card-image-container::before {
-      background-color: #658FF9; }
-    .our-groups__slider .swiper-slide:nth-child(2) .our-groups__card-image-container::before {
-      background-color: #EB9FFF; }
-    .our-groups__slider .swiper-slide:nth-child(3) .our-groups__card-image-container::before {
-      background-color: #FFC773; }
-    .our-groups__slider .swiper-slide:nth-child(4) .our-groups__card-image-container::before {
-      background-color: #F04D53; }
-    .our-groups__slider .swiper-slide:nth-child(5) .our-groups__card-image-container::before {
-      background-color: #FFACBA; } }
+      margin-bottom: 0; } }
 
 @media only screen and (max-width: 576px) {
   .our-groups__slider .swiper-wrapper {
