@@ -129,7 +129,12 @@
             margin-top: auto;
         }
     }
-
+    &--about-us {
+        display: none;
+        @include breakpoint(tablet) {
+            display: block;
+        }
+    }
 
    
 }

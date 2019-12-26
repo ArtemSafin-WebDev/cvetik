@@ -19,3 +19,26 @@ document.addEventListener('DOMContentLoaded', function() {
     modals();
     formModal();
 });
+
+
+window.addEventListener('load', function() {
+    document.body.classList.add('fade-in');
+
+    const links = Array.from(document.querySelectorAll('a:not([target="_blank"]):not([href^="mailto:"]):not([href^="tel:"])'));
+    let timer = null;
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (timer) clearTimeout(timer);
+            const newLocation = this.href;
+            timer = setTimeout(function() {
+                window.location = newLocation;
+                console.log('Going to new location');
+            }, 300);
+            document.body.classList.add('fade-out');
+        })
+    })
+
+    console.log(links);
+})

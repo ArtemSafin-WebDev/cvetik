@@ -576,7 +576,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity .3s;
   -webkit-tap-highlight-color: transparent; }
+  body.fade-in {
+    opacity: 1; }
+  body.fade-out {
+    opacity: 0; }
 
 ul {
   list-style: none; }
@@ -937,6 +943,12 @@ img {
 @media only screen and (max-width: 1024px) {
   .main-nav__list-item--phone {
     margin-top: auto; } }
+
+.main-nav__list-item--about-us {
+  display: none; }
+  @media only screen and (max-width: 1024px) {
+    .main-nav__list-item--about-us {
+      display: block; } }
 
 .main-nav__link {
   font-size: 1.2rem;
