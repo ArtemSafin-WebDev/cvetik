@@ -1,5 +1,5 @@
 .main-nav {
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         background-color: white;
         color: #444444;
         position: fixed;
@@ -8,7 +8,7 @@
         top: 0;
         bottom: 0;
         z-index: 500;
-        padding: 3rem;
+        padding: 3rem 0;
         display: flex;
         flex-direction: column;
         padding-bottom: 1.5rem;
@@ -35,8 +35,15 @@
     top: 3.5rem;
     right: 4rem;
     display: none;
+
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: #EFA0A3;
+        }
+    }
     @include noHighlight();
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         display: block;
     }
     @include breakpoint(small-mobile) {
@@ -44,9 +51,10 @@
         right: 3rem;
     }
     svg {
-        fill: #E24F54;
+        fill: #9A9A9A;
         width: 20px;
         height: 20px;
+        transition: fill .2s;
         @include breakpoint(small-mobile) {
             width: 16px;
             height: 16px;
@@ -70,7 +78,7 @@
 
 
    
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         display: block;
 
 
@@ -87,12 +95,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @include breakpoint(mobile) {
+    
+    @include breakpoint(tablet) {
         display: flex;
         justify-content: initial;
         align-items: initial;
         flex-direction: column;
-        width: 65%;
+        width: 50%;
         margin-left: auto;
         flex-grow: 1;
         max-height: 100%;
@@ -113,27 +122,38 @@
 
 
 .main-nav__list-item {
+    
+   
     &--phone {
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             margin-top: auto;
         }
     }
+
+
+   
 }
 
 
 .main-nav__link {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 600;
     display: block;
     text-transform: uppercase;
-    padding: 3rem 0;
+    padding: 2rem 0;
+    transition: color .2s;
+    .no-touch &:hover,
+    .touch &:active {
+        color: rgba(white, .5);
+    }
+   
     @include breakpoint(tablet) {
+        font-weight: 400;
         padding: 1.8rem 0;
         font-weight: 600;
-    }
-    @include breakpoint(mobile) {
-        font-weight: 400;
-
+        font-size: 1.4rem;
+        padding-right: 3rem;
         .no-touch &:hover,
         .touch &:active {
             color: #e24f54;
@@ -141,11 +161,13 @@
     }
     @include breakpoint(small-mobile) {
         padding: 1.2rem 0;
+        padding-left: 3rem;
     }
     &--main {
-        width: 8rem;
+        width: 10rem;
         padding: 0;
-        @include breakpoint(mobile) {
+       
+        @include breakpoint(tablet) {
             display: none;
         }
         img {
@@ -156,8 +178,10 @@
 
 
     &--phone {
-        @include breakpoint(mobile) {
-            color: #5E5E5E;
+        font-size: 1.4rem;
+        font-weight: 700;
+        @include breakpoint(tablet) {
+            color: #5D5D5D;
             font-weight: 700;
         }
     }

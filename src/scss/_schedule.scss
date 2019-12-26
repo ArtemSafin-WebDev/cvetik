@@ -45,6 +45,30 @@
     }
 }
 
+.schedule__secondary-heading {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--superdark-violet);
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    text-align: center;
+    @include breakpoint(desktop) {
+        margin-bottom: 6rem;
+        font-size: 3rem;
+    }
+    @include breakpoint(tablet) {
+        font-size: 2.4rem;
+        margin-bottom: 5rem;
+    }
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+    @include breakpoint(small-mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
 .schedule__group-info {
     column-count: 2;
     column-gap: 5rem;
@@ -146,23 +170,23 @@
         }
     }
     &--pink {
-        color: #C961E4;
-        border-color: #C961E4;
+        color: #c961e4;
+        border-color: #c961e4;
         .schedule__card-top {
-            background-color: #C961E4;
+            background-color: #c961e4;
         }
         .schedule__content {
-            border-color: #C961E4;
+            border-color: #c961e4;
         }
     }
     &--green {
-        color: #7BD684;
-        border-color: #7BD684;
+        color: #7bd684;
+        border-color: #7bd684;
         .schedule__card-top {
-            background-color: #7BD684;
+            background-color: #7bd684;
         }
         .schedule__content {
-            border-color: #7BD684;
+            border-color: #7bd684;
         }
     }
 }
@@ -205,7 +229,12 @@
     }
 }
 
+
 .schedule__info {
+    margin-bottom: 8rem;
+}
+
+.schedule__info-list {
     display: flex;
     margin: -3rem;
     flex-wrap: wrap;
@@ -268,7 +297,6 @@
     line-height: 1.5;
 }
 
-
 .schedule__table {
     margin-bottom: 10rem;
     @include breakpoint(mobile) {
@@ -277,7 +305,6 @@
 }
 
 .schedule__info-card-requirements-list {
-   
     margin-top: 3rem;
     @include breakpoint(small-mobile) {
         margin-bottom: 2rem;
@@ -285,8 +312,8 @@
 }
 
 .schedule__info-card-requirements-list-item {
-    margin-bottom: .2rem;
-    
+    margin-bottom: 0.2rem;
+
     position: relative;
     @include breakpoint(small-mobile) {
         padding-left: 2.5rem;
@@ -313,8 +340,6 @@
         margin-bottom: 0;
     }
 }
-
-
 
 .schedule__literature {
     margin-top: 10rem;

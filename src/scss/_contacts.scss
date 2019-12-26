@@ -1,15 +1,10 @@
 .contacts {
-    
     margin-top: 14rem;
-    margin-bottom: 27rem;
+    margin-bottom: 14rem;
 
-    
-   
     @include breakpoint(desktop) {
         margin-top: 8rem;
-        margin-bottom: 14rem;
     }
-
 
     @include breakpoint(tablet) {
         margin-top: 5.5rem;
@@ -24,8 +19,6 @@
         margin-bottom: 8rem;
     }
 }
-
-
 
 .contacts__heading {
     font-size: 4.6rem;
@@ -51,16 +44,12 @@
     }
 }
 
-
-
 .contacts__row {
     display: flex;
     @include breakpoint(mobile) {
         flex-direction: column;
     }
 }
-
-
 
 .contacts__left-column {
     width: 60%;
@@ -74,13 +63,11 @@
         margin-right: 4rem;
     }
 
-
     @include breakpoint(mobile) {
         margin-right: 0;
         width: 100%;
     }
 }
-
 
 .contacts__right-column {
     width: 67.5rem;
@@ -91,18 +78,16 @@
         width: 44%;
     }
 
-
     @include breakpoint(mobile) {
         width: 100%;
         margin-top: 4rem;
     }
 }
 
-
 .contacts__map {
     position: relative;
     background-color: lightgrey;
-    
+
     &::after {
         content: '';
         width: 100%;
@@ -125,8 +110,6 @@
         height: 100%;
     }
 }
-
-
 
 .contacts__text-content {
     font-size: 2.4rem;
@@ -156,153 +139,194 @@
     }
 }
 
-
-
 .contacts__form {
+    max-width: 1075px;
+    margin: 0 auto;
     position: relative;
     margin-top: 35rem;
     margin-bottom: 16.5rem;
     text-align: center;
-
-
     @include breakpoint(desktop) {
         margin-top: 25rem;
         margin-bottom: 8rem;
     }
 
-
     @include breakpoint(tablet) {
         margin-top: 16rem;
     }
-}
 
-
-.contacts__form-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: -25rem;
-    width: 25rem;
-    z-index: -1;
-    transform: rotate(-15deg);
-    @include breakpoint(desktop) {
-        width: 20rem;
-        margin-top: -20rem;
+    &--schedule {
+        margin-top: 14rem;
+        margin-bottom: 10rem;
+        @include breakpoint(tablet) {
+            margin-top: 10rem;
+        }
     }
 
-
-    @include breakpoint(mobile) {
-        width: 15rem;
-        margin-top: -15rem;
-    }
-
-
-    @include breakpoint(small-mobile) {
-        width: 10rem;
-        margin-top: -10rem;
-    }
-}
-
-
-.contacts__form-row {
-    background-color: #FFCA64;
-    color: white;
-    display: flex;
-    padding-top: 5rem;
-    padding-bottom: 7rem;
-    @include breakpoint(tablet) {
-        flex-direction: column;
-        padding-bottom: 5rem;
-    }
-
-
-    @include breakpoint(mobile) {
-        padding: 3rem 0;
-    }
-
-    @include breakpoint(small-mobile) {
-        padding-bottom: 1.5rem;
-        
-    }
     
 }
 
+.contacts__form-image {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    margin-top: -15rem;
+    width: 18rem;
+    z-index: 4;
+    transform: rotate(-10deg);
+    .contacts__form--ladushki & {
+        width: 25rem;
+        margin-top: -15rem;
 
-.contacts__form-left-column {
-    width: 60%;
-    padding-left: 9.5rem;
-    padding-right: 6rem;
-    @include breakpoint(laptop) {
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-right: 0;
+        @include breakpoint(tablet) {
+            width: 16rem;
+            margin-top: -10rem;
+            right: 0;
+        }
+        @include breakpoint(small-mobile) {
+            width: 12rem;
+            margin-top: -10rem;
+            right: 0;
+        }
+    }
+
+
+    .contacts__form--luchicki & {
+        width: 21rem;
+        margin-top: -14rem;
+        @include breakpoint(tablet) {
+            width: 16rem;
+            margin-top: -14rem;
+            right: 0;
+        }
+        
+        @include breakpoint(small-mobile) {
+            width: 10rem;
+            margin-top: -10rem;
+            right: 0;
+        }
+    }
+
+    .contacts__form--vishenki & {
+        width: 20rem;
+        margin-top: -17rem;
+        transform: rotate(5deg);
+        @include breakpoint(tablet) {
+            width: 14rem;
+            margin-top: -12rem;
+            right: 20;
+        }
+
+        @include breakpoint(mobile) {
+            width: 12rem;
+            margin-top: -12rem;
+            right: 0;
+        }
+        
+        @include breakpoint(small-mobile) {
+            width: 8rem;
+            margin-top: -8rem;
+            right: 1rem;
+        }
+    }
+
+    .contacts__form--zvezdocki & {
+        width: 17.5rem;
+        margin-top: -17rem;
+        transform: rotate(5deg);
+        @include breakpoint(tablet) {
+            width: 12rem;
+            margin-top: -12rem;
+            right: 20;
+        }
+
+        @include breakpoint(mobile) {
+            width: 12rem;
+            margin-top: -12rem;
+            right: 0;
+        }
+        
+        @include breakpoint(small-mobile) {
+            width: 8rem;
+            margin-top: -10rem;
+            right: 0;
+        }
     }
 
     @include breakpoint(tablet) {
-        width: 100%;
-
-        padding: 0 4rem;
+        width: 10rem;
+        margin-top: -10rem;
     }
-
-
-    @include breakpoint(mobile) {
-        padding: 0 3rem;
-    }
-
-
 
     @include breakpoint(small-mobile) {
-        padding: 0 1.5rem;
+        width: 8rem;
+        margin-top: -8rem;
+        right: 0;
     }
 }
 
+.contacts__form-row {
+    background-color: #ffca64;
+    color: white;
+    display: flex;
+    padding: 5rem 6.5rem;
+    border-radius: 15px;
+
+    .contacts__form--ladushki & {
+        background-color: #7BD684;
+    }
+
+    .contacts__form--luchicki & {
+        background-color: #658FF9;
+    }
+
+    .contacts__form--vishenki & {
+        background-color: #C961E4;
+    }
+
+
+    .contacts__form--zvezdocki & {
+        background-color: #F5BBC5;
+    }
+    
+    @include breakpoint(tablet) {
+        flex-direction: column;
+    }
+
+
+    @include breakpoint(small-mobile) {
+        padding: 2rem 2rem;
+        padding-top: 4rem;
+    }
+}
+
+.contacts__form-left-column {
+    width: 55%;
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+}
 
 .contacts__form-right-column {
-    width: 40%;
-    padding: 0 6.5rem;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include breakpoint(laptop) {
-        padding: 0 3rem;
-        padding-left: 0;
-        
-    }
-
     @include breakpoint(tablet) {
         width: 100%;
-        padding: 0 4rem;
-        padding-top: 4rem;
         display: none;
     }
 }
 
-
 .contacts__form-heading {
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 6rem;
-
-    @include breakpoint(desktop) {
-        margin-bottom: 4rem;
-    }
-
-
-    @include breakpoint(mobile) {
-        font-size: 3.2rem;
-    }
-
-
-    @include breakpoint(small-mobile) {
-        font-size: 2.4rem;
-        margin-bottom: 2.4rem;
-    }
+    margin-bottom: 2rem;
 }
-
 
 .contacts__form-input-row {
     display: flex;
@@ -322,29 +346,19 @@
         background-color: #fff;
         border-radius: 2.5rem;
         font: inherit;
-        font-size: 1.8rem;
-        padding: 3rem;
+        font-size: 1.4rem;
+        padding: 2.2rem;
         color: black;
         display: block;
+        margin-top: auto;
         @include breakpoint(mobile) {
-            font-size: 1.6rem;
             border-radius: 1.5rem;
         }
 
-        @include breakpoint(small-mobile) {
-            padding: 2rem 2rem;
-        }
         @include placeholder {
             color: #808080;
-            font-size: 1.8rem;
             text-transform: uppercase;
-
-            @include breakpoint(mobile) {
-                font-size: 1.6rem;
-               
-            }
         }
-       
     }
 
     textarea {
@@ -352,12 +366,12 @@
     }
 }
 
-
-
 .contacts__form-input-wrapper {
     width: 30%;
     flex-grow: 1;
-    margin-right: 8rem;
+    margin-right: 5.5rem;
+    display: flex;
+    flex-direction: column;
     @include breakpoint(small-mobile) {
         width: 100%;
         margin-right: 0;
@@ -372,15 +386,17 @@
 
     .parsley-errors-list {
         text-align: left;
-        color: var(--blue);
-        // color: white;
-        font-size: 1.6rem;
+        color: #e24f54;
+        font-size: 1rem;
         line-height: 1.5;
-        margin-top: 1rem;
-
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        order: -1;
+        text-transform: uppercase;
+        padding: 0 2rem;
         @include breakpoint(mobile) {
             font-size: 1.2rem;
-            margin-top: .5rem;
+            
         }
     }
 
@@ -389,19 +405,14 @@
     }
 }
 
-
-
 .contacts__form-description {
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
-    @include breakpoint(desktop) {
-        font-size: 3.2rem;
-    }
+    padding-left: 6.5rem;
+    padding-right: 0;
 }
-
-
 
 .contacts__form-btn {
     background-color: #6a92f8;
@@ -419,13 +430,8 @@
     user-select: none;
     transition: background-color 0.2s;
     @include breakpoint(small-mobile) {
-        
         margin-top: 3rem;
     }
-
-
-
-    
 
     .no-touch &:hover,
     .touch &:active {

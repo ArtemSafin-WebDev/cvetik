@@ -52,17 +52,12 @@
             background-color: #7f9ef3;
             background-color: #7694f6;
         }
-
-        // .top-slider__card-video {
-        //     box-shadow: 0px 0px 6rem rgba(#7f9ef3, .8);
-        // }
-       
     }
 }
 
 .top-slider__card-content {
     margin-top: auto;
-    margin-bottom: 9.5rem;
+    margin-bottom: 8rem;
     text-align: center;
     color: white;
     @include breakpoint(tablet) {
@@ -74,7 +69,7 @@
 }
 
 .top-slider__card-heading {
-    font-size: 8rem;
+    font-size: 9rem;
     font-weight: 600;
     text-transform: uppercase;
     user-select: none;
@@ -101,7 +96,7 @@
 }
 
 .top-slider__subtitle {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     font-family: var(--roboto);
     max-width: 60%;
@@ -113,9 +108,7 @@
     .swiper-slide-active & {
         opacity: 1;
     }
-    @include breakpoint(desktop) {
-        font-size: 1.8rem;
-    }
+   
     @include breakpoint(tablet) {
         font-size: 1.4rem;
         max-width: none;
@@ -191,7 +184,7 @@
 }
 
 .top-slider__pagination {
-    bottom: 5rem;
+    bottom: 2.4rem;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -199,28 +192,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include breakpoint(tablet) {
-        bottom: 3.5rem;
-    }
-    @include breakpoint(mobile) {
-        bottom: 3rem;
-    }
-    @include breakpoint(small-mobile) {
-        bottom: 1.5rem;
-    }
     .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         background-color: #fff;
         outline: none;
         opacity: 0.5;
-        margin-right: 15px;
-        @include breakpoint(tablet) {
-            width: 4px;
-            height: 4px;
-            margin-right: 8px;
-           
-        }
+        margin-right: 1rem;
         &:last-child {
             margin-right: 0;
         }

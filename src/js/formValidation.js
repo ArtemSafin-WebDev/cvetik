@@ -57,7 +57,7 @@ export default function() {
     Parsley.addMessages('ru', {
         defaultMessage: 'Некорректное значение.',
         type: {
-            email: 'В данном поле может быть только E-mail',
+            email: 'Введите корректный E-mail',
             url: 'Введите URL адрес.',
             number: 'Введите число.',
             integer: 'Введите целое число.',

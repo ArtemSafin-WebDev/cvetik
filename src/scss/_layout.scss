@@ -41,14 +41,12 @@
     min-height: 23rem;
     color: white;
     z-index: 500;
-    padding-top: 2.8rem;
+    padding-top: 3.5rem;
     @include breakpoint(tablet) {
         padding-bottom: 2.8rem;
         min-height: auto;
     }
-    @include breakpoint(mobile) {
-       
-    }
+   
     @include breakpoint(small-mobile) {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -80,7 +78,7 @@
 
 .page-header__row {
   
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         display: flex;
         align-items: center;
     }
@@ -88,7 +86,7 @@
 
 .page-header__mobile-logo {
     display: none;
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         display: block;
         margin-right: auto;
         width: 14.5rem;
@@ -112,7 +110,7 @@
             height: 1.4rem;
         }
     }
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         display: block;
     }
 }
@@ -187,14 +185,11 @@
 }
 
 .page-footer__location {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     font-family: var(--roboto);
     font-weight: 400;
-    @include breakpoint(tablet) {
-        font-size: 1.4rem;
-    }
-
+   
     @include breakpoint(small-mobile) {
         order: 20;
         margin-bottom: 4rem;
@@ -212,9 +207,20 @@
 
 .page-footer__phone-link {
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2rem;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    transition: color .2s;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: rgba(white, .5);
+    }
     
     @include breakpoint(tablet) {
         font-size: 1.8rem;
@@ -227,4 +233,15 @@
 .page-footer__email-link {
     font-size: 1.4rem;
     display: block;
+    margin-top: .5rem;
+    transition: color .2s;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: rgba(white, .5);
+    }
 }
