@@ -31,14 +31,15 @@ window.addEventListener('load', function() {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             if (timer) clearTimeout(timer);
-            const newLocation = this.href;
+            const newLocation = this.href.trim();
+
+            if (!newLocation || newLocation.startsWith("#")) return;
             timer = setTimeout(function() {
                 window.location = newLocation;
-                console.log('Going to new location');
             }, 300);
             document.body.classList.add('fade-out');
         })
     })
 
-    console.log(links);
+    
 })
