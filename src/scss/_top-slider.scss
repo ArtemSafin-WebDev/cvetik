@@ -215,18 +215,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: -4rem;
-    width: 35rem;
-    height: 35rem;
+    // width: 35rem;
+    // height: 35rem;
     z-index: -1;
     opacity: 0;
     transition: opacity .8s .9s;
 
-    .swiper-slide-active & {
-        opacity: 1;
+
+
+    width: 70rem;
+    height: 70rem;
+
+
+    @include breakpoint(desktop) {
+        width: 50rem;
+        height: 50rem;
     }
+
     @include breakpoint(tablet) {
         margin-top: -2rem;
     }
+
+
+    @include breakpoint(mobile) {
+        width: 30rem;
+        height: 30rem;
+    }
+    .swiper-slide-active & {
+        opacity: 1;
+    }
+   
     video {
         position: absolute;
         left: 0;
