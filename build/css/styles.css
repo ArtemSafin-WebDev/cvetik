@@ -546,26 +546,32 @@ button.swiper-pagination-bullet {
   --max-container-width: 1824px;
   --inner-container-max-width: 1530px;
   --content-padding: 40px;
-  --primary-font-color: #5E5E5E;
-  --red: #FA4F57;
-  --dark-pink: #FFACBA;
-  --light-pink: #FFE6EA;
-  --superdark-violet: #8B28A6;
-  --dark-violet: #C961E4;
-  --light-violet: #EB9FFF;
-  --orange: #FFC773;
-  --green: #7BD684;
-  --blue: #6F91F3;
+  --primary-font-color: #5e5e5e;
+  --red: #fa4f57;
+  --dark-pink: #ffacba;
+  --light-pink: #ffe6ea;
+  --superdark-violet: #8b28a6;
+  --dark-violet: #c961e4;
+  --light-violet: #eb9fff;
+  --orange: #ffc773;
+  --green: #7bd684;
+  --blue: #6f91f3;
   --roboto: 'Roboto', sans-serif;
   --montserrat: 'Montserrat', sans-serif; }
   @media only screen and (max-width: 576px) {
     :root {
       --content-padding: 24px; } }
+  @media only screen and (max-width: 370px) {
+    :root {
+      --content-padding: 20px; } }
 
 html {
   box-sizing: border-box;
   font-size: 10px;
   -webkit-tap-highlight-color: transparent; }
+  @media only screen and (max-width: 370px) {
+    html {
+      font-size: 8px; } }
 
 body {
   min-width: 320px;
@@ -577,7 +583,7 @@ body {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   -webkit-tap-highlight-color: transparent; }
   body.fade-in {
     opacity: 1; }
