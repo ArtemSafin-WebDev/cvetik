@@ -688,14 +688,10 @@ img {
 
 .page-header {
   position: relative;
-  min-height: 23rem;
   color: white;
   z-index: 500;
-  padding-top: 3.5rem; }
-  @media only screen and (max-width: 1024px) {
-    .page-header {
-      padding-bottom: 2.8rem;
-      min-height: auto; } }
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
   @media only screen and (max-width: 576px) {
     .page-header {
       padding-top: 2rem;
@@ -1091,7 +1087,7 @@ img {
   background-color: var(--dark-violet);
   padding: 5rem;
   text-transform: uppercase; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .benefits__card-title {
       padding: 3.5rem; } }
   @media only screen and (max-width: 576px) {
@@ -1110,7 +1106,7 @@ img {
   flex-direction: column;
   flex-grow: 1;
   transition: color .3s; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .benefits__card-content {
       padding-top: 6rem;
       padding-bottom: 6rem;
@@ -1139,7 +1135,7 @@ img {
   text-transform: uppercase;
   transition: color .3s;
   min-height: 4.5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .benefits__card-subtitle {
       display: flex;
       flex-direction: column;
@@ -1160,7 +1156,7 @@ img {
   font-weight: 500;
   font-family: var(--roboto);
   margin-top: 2.5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .benefits__card-text {
       margin-top: 1.5rem; } }
   @media only screen and (max-width: 576px) {
@@ -1234,7 +1230,7 @@ img {
   transition: opacity .8s .3s; }
   .swiper-slide-active .top-slider__card-heading {
     opacity: 1; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .top-slider__card-heading {
       font-size: 7.2rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1285,7 +1281,7 @@ img {
       -ms-user-select: none;
           user-select: none;
   transition: background-color 0.2s; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .top-slider__card-btn {
       padding: 0.6rem 2.5rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1358,7 +1354,7 @@ img {
   transition: opacity .8s .9s;
   width: 70rem;
   height: 70rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .top-slider__card-video {
       width: 50rem;
       height: 50rem; } }
@@ -1485,7 +1481,7 @@ img {
   position: relative;
   padding: 9rem 0;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .services {
       padding: 6rem 0; } }
   @media only screen and (max-width: 1024px) {
@@ -1513,7 +1509,7 @@ img {
   text-align: center;
   color: var(--superdark-violet);
   margin-bottom: 8rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .services__heading {
       margin-bottom: 5rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1532,7 +1528,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -3rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .services__list {
       margin: -1rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1550,7 +1546,7 @@ img {
   padding: 3rem;
   display: flex;
   flex-direction: column; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .services__list-item {
       padding: 1rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1639,7 +1635,7 @@ img {
   font-size: 1.4rem;
   line-height: 1.67;
   margin-bottom: 8rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .services__content {
       margin-bottom: 2.5rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1710,7 +1706,7 @@ img {
   position: relative;
   padding-top: 9rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .our-groups {
       padding-top: 6rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1738,7 +1734,7 @@ img {
   text-align: center;
   color: var(--superdark-violet);
   margin-bottom: 8rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .our-groups__heading {
       margin-bottom: 6rem; } }
   @media only screen and (max-width: 1024px) {
@@ -1804,7 +1800,7 @@ img {
   width: 100%;
   position: relative;
   display: block; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .our-groups__card {
       padding-bottom: 6rem; } }
   @media only screen and (max-width: 576px) {
@@ -1943,7 +1939,7 @@ img {
 .teachers {
   margin-top: 14rem;
   margin-bottom: 27rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
@@ -1965,7 +1961,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -1985,14 +1981,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -6.5rem -9rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers__list {
       margin: -3.5rem -5rem; } }
 
 .teachers__list-item {
   width: 100%;
   padding: 6.5rem 9rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers__list-item {
       padding: 3.5rem 5rem; } }
   .teachers__list-item--half {
@@ -2033,7 +2029,7 @@ img {
   border: 10px solid #e24f54;
   border-radius: 50%;
   overflow: hidden; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers__card-image-container {
       width: 28rem;
       height: 28rem; } }
@@ -2080,21 +2076,21 @@ img {
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 2rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers__card-name {
       font-size: 2rem; } }
 
 .teachers__card-text {
   font-size: 1.8rem;
   line-height: 1.5; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .teachers__card-text {
       font-size: 1.6rem; } }
 
 .contacts {
   margin-top: 14rem;
   margin-bottom: 14rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .contacts {
       margin-top: 8rem; } }
   @media only screen and (max-width: 1024px) {
@@ -2115,7 +2111,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .contacts__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -2213,7 +2209,7 @@ img {
   margin-top: 35rem;
   margin-bottom: 16.5rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .contacts__form {
       margin-top: 25rem;
       margin-bottom: 8rem; } }
@@ -2469,7 +2465,7 @@ img {
 .holidays {
   margin-top: 14rem;
   margin-bottom: 27rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .holidays {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
@@ -2491,7 +2487,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .holidays__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -2606,7 +2602,7 @@ img {
   text-transform: uppercase;
   font-size: 2.4rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .holidays__card-label {
       font-size: 2rem; } }
   @media only screen and (max-width: 1200px) {
@@ -2630,7 +2626,7 @@ img {
 .program {
   margin-top: 14rem;
   margin-bottom: 27rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
@@ -2652,7 +2648,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -2748,7 +2744,7 @@ img {
   margin-top: 6.5rem; }
   .program__subheading-divider--about-us {
     width: 15rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program__subheading-divider {
       height: 6px; } }
   @media only screen and (max-width: 576px) {
@@ -2765,7 +2761,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -4rem -13rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program__blocks-list {
       margin: 0; } }
   @media only screen and (max-width: 576px) {
@@ -2776,7 +2772,7 @@ img {
 .program__blocks-list-item {
   width: 50%;
   padding: 4rem 13rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program__blocks-list-item {
       padding: 0; } }
   @media only screen and (max-width: 576px) {
@@ -2817,7 +2813,7 @@ img {
   margin-top: 6.5rem;
   text-align: center;
   font-weight: 600; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program__card-title {
       font-size: 3rem;
       margin-top: 4rem; } }
@@ -2832,7 +2828,7 @@ img {
   display: block; }
   .no-touch .program__card:hover .program__card-image {
     transform: scale(1.05); }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .program__card {
       width: 80%;
       margin: 0 auto; } }
@@ -2840,7 +2836,7 @@ img {
 .prices {
   margin-top: 14rem;
   margin-bottom: 14rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
@@ -2866,7 +2862,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -2895,7 +2891,7 @@ img {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__bonuses-paragraph {
       margin-bottom: 8rem; } }
   @media only screen and (max-width: 1024px) {
@@ -2932,7 +2928,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 48rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__bonuses-card {
       min-height: 44rem; } }
   @media only screen and (max-width: 1024px) {
@@ -2970,7 +2966,7 @@ img {
   text-transform: uppercase;
   background-color: #8b28a6;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__bonuses-card-top {
       font-size: 1.8rem;
       min-height: 11rem; } }
@@ -3001,7 +2997,7 @@ img {
   border-bottom: 1rem solid #8b28a6;
   text-align: center;
   padding: 0 5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__bonuses-card-bottom {
       font-weight: 400; } }
   @media only screen and (max-width: 1024px) {
@@ -3018,7 +3014,7 @@ img {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 10rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__remark {
       max-width: 85rem; } }
   @media only screen and (max-width: 768px) {
@@ -3036,7 +3032,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 6rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__remark-text {
       font-size: 2.4rem;
       margin-bottom: 3rem; } }
@@ -3055,7 +3051,7 @@ img {
   display: block;
   margin: 0 auto;
   background-color: #c961e4; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__remark-divider {
       height: 6px; } }
   @media only screen and (max-width: 576px) {
@@ -3069,7 +3065,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -0.6rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-list {
       margin: -1.2rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3081,7 +3077,7 @@ img {
   padding: 0.6rem;
   display: flex;
   flex-direction: column; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-list-item {
       width: 50%;
       padding: 1.2rem; } }
@@ -3153,7 +3149,7 @@ img {
   text-transform: uppercase;
   color: white;
   flex-shrink: 0; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-card-type {
       font-size: 3.6rem;
       padding: 2rem; } }
@@ -3168,7 +3164,7 @@ img {
   padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-card-content {
       padding-bottom: 4rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3182,7 +3178,7 @@ img {
   font-weight: 600;
   color: #8b28a6;
   margin-top: 1.5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-card-time {
       font-size: 2.4rem;
       margin-top: 2.5rem; } }
@@ -3198,7 +3194,7 @@ img {
   line-height: 2;
   text-align: justify;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-card-text {
       margin-top: 2.5rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3228,7 +3224,7 @@ img {
   line-height: 1.2;
   font-family: var(--roboto);
   margin-bottom: 1.5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-card-regime-remark {
       font-weight: 500;
       font-size: 1.8rem;
@@ -3248,7 +3244,7 @@ img {
   background-color: #6a92f8;
   margin-bottom: 2rem;
   transition: background-color 0.2s; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-card-regime-btn {
       font-size: 1.8rem;
       padding: 1.5rem 4rem;
@@ -3280,7 +3276,7 @@ img {
   margin-left: -2rem;
   margin-right: -2rem;
   margin-bottom: 3.5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-inputs {
       margin-bottom: 6rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3309,7 +3305,7 @@ img {
     background: transparent;
     border-radius: 1.5rem;
     width: 100%; }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 2500px) {
       .prices__plans-card-input-wrapper input,
       .prices__plans-card-input-wrapper textarea {
         font-size: 1.6rem;
@@ -3324,35 +3320,35 @@ img {
     .prices__plans-card-input-wrapper input::-webkit-input-placeholder,
     .prices__plans-card-input-wrapper textarea::-webkit-input-placeholder {
       color: #808080; }
-      @media only screen and (max-width: 1440px) {
+      @media only screen and (max-width: 2500px) {
         .prices__plans-card-input-wrapper input::-webkit-input-placeholder,
         .prices__plans-card-input-wrapper textarea::-webkit-input-placeholder {
           text-transform: uppercase; } }
     .prices__plans-card-input-wrapper input:-moz-placeholder,
     .prices__plans-card-input-wrapper textarea:-moz-placeholder {
       color: #808080; }
-      @media only screen and (max-width: 1440px) {
+      @media only screen and (max-width: 2500px) {
         .prices__plans-card-input-wrapper input:-moz-placeholder,
         .prices__plans-card-input-wrapper textarea:-moz-placeholder {
           text-transform: uppercase; } }
     .prices__plans-card-input-wrapper input::-moz-placeholder,
     .prices__plans-card-input-wrapper textarea::-moz-placeholder {
       color: #808080; }
-      @media only screen and (max-width: 1440px) {
+      @media only screen and (max-width: 2500px) {
         .prices__plans-card-input-wrapper input::-moz-placeholder,
         .prices__plans-card-input-wrapper textarea::-moz-placeholder {
           text-transform: uppercase; } }
     .prices__plans-card-input-wrapper input:-ms-input-placeholder,
     .prices__plans-card-input-wrapper textarea:-ms-input-placeholder {
       color: #808080; }
-      @media only screen and (max-width: 1440px) {
+      @media only screen and (max-width: 2500px) {
         .prices__plans-card-input-wrapper input:-ms-input-placeholder,
         .prices__plans-card-input-wrapper textarea:-ms-input-placeholder {
           text-transform: uppercase; } }
   .prices__plans-card-input-wrapper textarea {
     resize: none;
     height: 20rem; }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 2500px) {
       .prices__plans-card-input-wrapper textarea {
         padding-top: 2rem;
         padding-bottom: 2rem; } }
@@ -3370,7 +3366,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__plans-bottom-remark {
       margin-top: 3rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3387,7 +3383,7 @@ img {
 .prices__additional {
   margin-top: 8rem;
   margin-bottom: 20rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional {
       margin-bottom: 10rem; } }
   @media only screen and (max-width: 768px) {
@@ -3405,7 +3401,7 @@ img {
   text-align: center;
   margin-bottom: 11rem;
   text-transform: uppercase; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -3425,7 +3421,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -4.5rem -2.2rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-list {
       margin: -3.7rem -2rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3440,7 +3436,7 @@ img {
   padding: 4.5rem 2.2rem;
   display: flex;
   flex-direction: column; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-list-item {
       padding: 3.7rem 2rem; } }
   @media only screen and (max-width: 1024px) {
@@ -3467,7 +3463,7 @@ img {
   transition: transform .3s, box-shadow .3s; }
   .prices__additional-card:link, .prices__additional-card:visited {
     color: white; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-card {
       padding-top: 7.5rem;
       padding-bottom: 3rem; } }
@@ -3506,7 +3502,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.6; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-card-title {
       font-size: 3rem;
       line-height: 2; } }
@@ -3519,7 +3515,7 @@ img {
   line-height: 1.6;
   font-weight: 600;
   text-transform: uppercase; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-cost-text {
       line-height: 2; } }
   @media only screen and (max-width: 1024px) {
@@ -3533,7 +3529,7 @@ img {
   text-transform: uppercase;
   margin-top: 2rem;
   font-weight: 700; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .prices__additional-cost-number {
       font-size: 4.8rem;
       margin-top: 5rem; } }
@@ -3634,7 +3630,7 @@ img {
 .standard-page {
   margin-top: 14rem;
   margin-bottom: 27rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .standard-page {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
@@ -3656,7 +3652,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .standard-page__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -3730,7 +3726,7 @@ img {
     color: #8B28A6;
     font-weight: 600;
     font-size: 3.6rem; }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 2500px) {
       .standard-page__content h2 {
         font-size: 3rem; } }
     @media only screen and (max-width: 576px) {
@@ -3846,7 +3842,7 @@ img {
 .schedule {
   margin-top: 14rem;
   margin-bottom: 27rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .schedule {
       margin-top: 8rem;
       margin-bottom: 14rem; } }
@@ -3868,7 +3864,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .schedule__heading {
       margin-bottom: 6rem;
       font-size: 3.6rem; } }
@@ -3891,7 +3887,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10rem;
   text-align: center; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .schedule__secondary-heading {
       margin-bottom: 6rem;
       font-size: 3rem; } }
@@ -3953,7 +3949,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 1.5rem; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 2500px) {
     .schedule__list-item {
       width: 25%; } }
   @media only screen and (max-width: 1200px) {

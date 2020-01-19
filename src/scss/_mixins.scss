@@ -59,11 +59,11 @@
 
 @mixin breakpoint($class) {
     @if $class == large-desktop {
-        @media only screen and (max-width: (1600px)) {
+        @media only screen and (max-width: (3200px)) {
             @content;
         }
     } @else if $class == desktop {
-        @media only screen and (max-width: (1440px)) {
+        @media only screen and (max-width: (2500px)) {
             @content;
         }
     } @else if $class == laptop {

@@ -13,7 +13,7 @@ export default function() {
             const myMap = new ymaps.Map(mapElement, {
                 center: coords,
                 zoom: 17,
-                controls: []
+                controls: ['zoomControl']
             });
 
             const myPlacemark = new ymaps.Placemark(

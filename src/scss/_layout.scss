@@ -38,14 +38,12 @@
 
 .page-header {
     position: relative;
-    min-height: 23rem;
+    
     color: white;
     z-index: 500;
     padding-top: 3.5rem;
-    @include breakpoint(tablet) {
-        padding-bottom: 2.8rem;
-        min-height: auto;
-    }
+    padding-bottom: 3.5rem;
+    
    
     @include breakpoint(small-mobile) {
         padding-top: 2rem;
