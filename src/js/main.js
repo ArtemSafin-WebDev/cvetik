@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('load', function() {
     document.body.classList.add('fade-in');
 
-    const links = Array.from(document.querySelectorAll('a:not([target="_blank"]):not([href^="mailto:"]):not([href^="tel:"])'));
+    const links = Array.from(document.querySelectorAll('a:not([target="_blank"]):not([href^="mailto:"]):not([href^="tel:"]):not(href^="#")'));
     let timer = null;
 
     links.forEach(link => {

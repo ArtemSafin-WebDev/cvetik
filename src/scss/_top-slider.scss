@@ -64,7 +64,7 @@
         margin-bottom: 6.5rem;
     }
     @include breakpoint(small-mobile) {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -91,7 +91,7 @@
     }
     @include breakpoint(small-mobile) {
         font-size: 2.4rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -113,6 +113,11 @@
         font-size: 1.4rem;
         max-width: none;
         padding: 0 var(--content-padding);
+    }
+
+
+    @include breakpoint(small-mobile) {
+        margin-bottom: 0.5rem;
     }
 }
 

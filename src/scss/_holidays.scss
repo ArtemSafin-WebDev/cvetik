@@ -121,7 +121,11 @@
     line-height: 1.5;
     position: relative;
     display: block;
-
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    will-change: transform;
 
     &::after {
         content: '';

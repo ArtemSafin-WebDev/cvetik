@@ -104,6 +104,7 @@
     transform-style: preserve-3d;
     outline: 1px solid transparent;
     transform: translateZ(0);
+    will-change: transform;
     @include breakpoint(tablet) {
         padding-left: 8rem;
         padding-right: 8rem;

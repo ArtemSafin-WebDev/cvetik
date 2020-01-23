@@ -1216,7 +1216,7 @@ img {
       margin-bottom: 6.5rem; } }
   @media only screen and (max-width: 576px) {
     .top-slider__card-content {
-      margin-bottom: 4rem; } }
+      margin-bottom: 5rem; } }
 
 .top-slider__card-heading {
   font-size: 9rem;
@@ -1242,7 +1242,7 @@ img {
   @media only screen and (max-width: 576px) {
     .top-slider__card-heading {
       font-size: 2.4rem;
-      margin-bottom: .5rem; } }
+      margin-bottom: 1rem; } }
 
 .top-slider__subtitle {
   font-size: 1.8rem;
@@ -1263,6 +1263,9 @@ img {
       font-size: 1.4rem;
       max-width: none;
       padding: 0 var(--content-padding); } }
+  @media only screen and (max-width: 576px) {
+    .top-slider__subtitle {
+      margin-bottom: 0.5rem; } }
 
 .top-slider__card-btn {
   background-color: #ffc773;
@@ -1580,7 +1583,8 @@ img {
           backface-visibility: hidden;
   transform-style: preserve-3d;
   outline: 1px solid transparent;
-  transform: translateZ(0); }
+  transform: translateZ(0);
+  will-change: transform; }
   @media only screen and (max-width: 1024px) {
     .services__card {
       padding-left: 8rem;
@@ -2562,7 +2566,13 @@ img {
   font-weight: 600;
   line-height: 1.5;
   position: relative;
-  display: block; }
+  display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+  transform: translateZ(0);
+  will-change: transform; }
   .holidays__card::after {
     content: '';
     display: block;
@@ -3460,7 +3470,13 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform .3s, box-shadow .3s; }
+  transition: transform .3s, box-shadow .3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+  transform: translateZ(0);
+  will-change: transform; }
   .prices__additional-card:link, .prices__additional-card:visited {
     color: white; }
   @media only screen and (max-width: 2500px) {

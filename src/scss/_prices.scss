@@ -719,6 +719,11 @@
     align-items: center;
     justify-content: center;
     transition: transform .3s, box-shadow .3s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    will-change: transform;
     &:link,
     &:visited {
         color: white;
