@@ -7,6 +7,7 @@ import maps from './map';
 import formValidation from './formValidation';
 import modals from './pricesModals';
 import formModal from './formModal';
+import newsDetailsSlider from './newsDetailsSlider';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     formValidation();
     modals();
     formModal();
+    newsDetailsSlider();
 });
 
 

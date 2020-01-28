@@ -1,357 +1,402 @@
-{% set title = "Главная страница" %} {% set headerType = "absolute" %} {% extends "layout.html" %} {% block content %}
+{% set title = "Главная страница" %}
+{% set headerType = "absolute" %}
+{% extends "layout.html" %}
+{% block content %}
 
-<section class="top-slider js-top-slider">
-    <button class="top-slider__button top-slider__button--prev">
-        <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-left">
-            <use xlink:href="#arrow-left"></use>
-        </svg>
-    </button>
-    <div class="top-slider__content">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="top-slider__card top-slider__card--english">
-                        <div class="top-slider__card-video">
-                            <video width="700" poster="misc/video/english.jpg" playsinline muted>
-                                <source src="misc/video/english.mp4" type="video/mp4" />
-                                <source src="misc/video/english.webm" type="video/webm" />
-                                Ваш браузер не поддерживает видео
-                            </video>
-                        </div>
-                        <div class="top-slider__card-content">
-                            <h3 class="top-slider__card-heading">
-                                АНГЛИЙСКИЙ ЯЗЫК
-                            </h3>
-                            <p class="top-slider__subtitle">
-                                В наших садах используется билингвальный подход к изучению языка. Обучение ведётся по уникальной методике Talented and Gifted.
-                            </p>
-                            <a href="dance.html" class="top-slider__card-btn">
-                                Подробнее
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="top-slider__card top-slider__card--choreography">
-                        <div class="top-slider__card-video">
-                            <video width="700" poster="misc/video/dance.jpg" playsinline muted>
-                                <source src="misc/video/dance.mp4" type="video/mp4" />
-                                <source src="misc/video/dance.webm" type="video/webm" />
-                                Ваш браузер не поддерживает видео
-                            </video>
-                        </div>
-                        <div class="top-slider__card-content">
-                            <h3 class="top-slider__card-heading">
-                                ХОРЕОГРАФИЯ
-                            </h3>
-                            <p class="top-slider__subtitle">
-                                Занятия ведет настоящий профессионал влюбленный в свое дело. Детки нашего садика занимают первые места на танцевальных конкурсах.
-                            </p>
-                            <a href="dance.html" class="top-slider__card-btn">
-                                Подробнее
-                            </a>
+    <section class="top-slider js-top-slider">
+        <button class="top-slider__button top-slider__button--prev">
+            <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-left">
+                <use xlink:href="#arrow-left"></use>
+            </svg>
+        </button>
+        <div class="top-slider__content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top-slider__card top-slider__card--english">
+                            <div class="top-slider__card-video">
+                                <video width="700" poster="misc/video/english.jpg" playsinline muted>
+                                    <source src="misc/video/english.mp4" type="video/mp4"/>
+                                    <source src="misc/video/english.webm" type="video/webm"/>
+                                    Ваш браузер не поддерживает видео
+                                </video>
+                            </div>
+                            <div class="top-slider__card-content">
+                                <h3 class="top-slider__card-heading">
+                                    АНГЛИЙСКИЙ ЯЗЫК
+                                </h3>
+                                <p class="top-slider__subtitle">
+                                    В наших садах используется билингвальный подход к изучению языка. Обучение ведётся по уникальной методике Talented and Gifted.
+                                </p>
+                                <a href="dance.html" class="top-slider__card-btn">
+                                    Подробнее
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="top-slider__card top-slider__card--robots">
-                        <div class="top-slider__card-video">
-                            <video width="700" poster="misc/video/robot.jpg" playsinline muted>
-                                <source src="misc/video/robot.mp4" type="video/mp4" />
-                                <source src="misc/video/robot.webm" type="video/webm" />
-                                Ваш браузер не поддерживает видео
-                            </video>
+                    <div class="swiper-slide">
+                        <div class="top-slider__card top-slider__card--choreography">
+                            <div class="top-slider__card-video">
+                                <video width="700" poster="misc/video/dance.jpg" playsinline muted>
+                                    <source src="misc/video/dance.mp4" type="video/mp4"/>
+                                    <source src="misc/video/dance.webm" type="video/webm"/>
+                                    Ваш браузер не поддерживает видео
+                                </video>
+                            </div>
+                            <div class="top-slider__card-content">
+                                <h3 class="top-slider__card-heading">
+                                    ХОРЕОГРАФИЯ
+                                </h3>
+                                <p class="top-slider__subtitle">
+                                    Занятия ведет настоящий профессионал влюбленный в свое дело. Детки нашего садика занимают первые места на танцевальных конкурсах.
+                                </p>
+                                <a href="dance.html" class="top-slider__card-btn">
+                                    Подробнее
+                                </a>
+                            </div>
                         </div>
-                        <div class="top-slider__card-content">
-                            <h3 class="top-slider__card-heading">
-                                РОБОТОТЕХНИКА
-                            </h3>
-                            <p class="top-slider__subtitle">
-                                На кружке дети могут по-новому увидеть окружающий их мир, проводя время над разработкой и оживлением самых разнообразных роботов
-                            </p>
-                            <a href="pool.html" class="top-slider__card-btn">
-                                Подробнее
-                            </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top-slider__card top-slider__card--robots">
+                            <div class="top-slider__card-video">
+                                <video width="700" poster="misc/video/robot.jpg" playsinline muted>
+                                    <source src="misc/video/robot.mp4" type="video/mp4"/>
+                                    <source src="misc/video/robot.webm" type="video/webm"/>
+                                    Ваш браузер не поддерживает видео
+                                </video>
+                            </div>
+                            <div class="top-slider__card-content">
+                                <h3 class="top-slider__card-heading">
+                                    РОБОТОТЕХНИКА
+                                </h3>
+                                <p class="top-slider__subtitle">
+                                    На кружке дети могут по-новому увидеть окружающий их мир, проводя время над разработкой и оживлением самых разнообразных роботов
+                                </p>
+                                <a href="pool.html" class="top-slider__card-btn">
+                                    Подробнее
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="top-slider__pagination"></div>
         </div>
-        <div class="top-slider__pagination"></div>
-    </div>
-    <button class="top-slider__button top-slider__button--next">
-        <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-right">
-            <use xlink:href="#arrow-right"></use>
-        </svg>
-    </button>
-</section>
-<section class="benefits">
-    <ul class="benefits__list">
-        <li class="benefits__list-item">
-            <div class="benefits__card">
-                <h4 class="benefits__card-title">
-                    Уютно
-                </h4>
-                <div class="benefits__card-content">
-                    <h5 class="benefits__card-subtitle">
+        <button class="top-slider__button top-slider__button--next">
+            <svg width="20" height="35" aria-hidden="true" class="icon icon-arrow-right">
+                <use xlink:href="#arrow-right"></use>
+            </svg>
+        </button>
+    </section>
+    <section class="benefits">
+        <ul class="benefits__list">
+            <li class="benefits__list-item">
+                <div class="benefits__card">
+                    <h4 class="benefits__card-title">
                         Уютно
-                    </h5>
-                    <p class="benefits__card-text">
-                        Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="benefits__list-item">
-            <div class="benefits__card">
-                <h4 class="benefits__card-title">
-                    0,5 ГА
-                </h4>
-                <div class="benefits__card-content">
-                    <h5 class="benefits__card-subtitle">
-                        В собственности сада
-                    </h5>
-                    <p class="benefits__card-text">
-                        Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="benefits__list-item">
-            <div class="benefits__card">
-                <h4 class="benefits__card-title">
-                    Гибкость
-                </h4>
-                <div class="benefits__card-content">
-                    <h5 class="benefits__card-subtitle">
-                        Индивидуальный тарифный план
-                    </h5>
-                    <p class="benefits__card-text">
-                        Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="benefits__list-item">
-            <div class="benefits__card">
-                <h4 class="benefits__card-title">
-                    2-7
-                </h4>
-                <div class="benefits__card-content">
-                    <h5 class="benefits__card-subtitle">
-                        Разновозрастное взаимодействие детей
-                    </h5>
-                    <p class="benefits__card-text">
-                        Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
-                    </p>
-                </div>
-            </div>
-        </li>
-    </ul>
-</section>
-<section class="our-groups js-our-groups-slider">
-    <h2 class="our-groups__heading">
-        Наши группы
-    </h2>
-    <div class="our-groups__slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="schedule.html" class="our-groups__card">
-                        <div class="our-groups__card-image-container">
-                            <picture>
-                                <source type="image/webp" srcset="img/groups/ladushki.webp 2x" />
-                                <img src="img/groups/ladushki.png" srcset="img/groups/ladushki@1x.png, img/groups/ladushki.png 2x" alt="" class="our-groups__card-image" />
-                            </picture>
-                        </div>
-                        <h5 class="our-groups__card-name">
-                            Ладушки
+                    </h4>
+                    <div class="benefits__card-content">
+                        <h5 class="benefits__card-subtitle">
+                            Уютно
                         </h5>
-                        <p class="our-groups__card-age">
-                            2-3 ГОДА
+                        <p class="benefits__card-text">
+                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
                         </p>
-                    </a>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <a href="schedule.html" class="our-groups__card">
-                        <div class="our-groups__card-image-container">
-                            <picture>
-                                <source type="image/webp" srcset="img/groups/zvezdocki.webp 2x" />
-                                <img src="img/groups/zvezdocki.png" srcset="img/groups/zvezdocki@1x.png, img/groups/zvezdocki.png 2x" alt="Логотип Звездочки" class="our-groups__card-image" />
-                            </picture>
-                        </div>
-                        <h5 class="our-groups__card-name">
-                            Звездочки
+            </li>
+            <li class="benefits__list-item">
+                <div class="benefits__card">
+                    <h4 class="benefits__card-title">
+                        0,5 ГА
+                    </h4>
+                    <div class="benefits__card-content">
+                        <h5 class="benefits__card-subtitle">
+                            В собственности сада
                         </h5>
-                        <p class="our-groups__card-age">
-                            3-4 ГОДА
+                        <p class="benefits__card-text">
+                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
                         </p>
-                    </a>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <a href="schedule.html" class="our-groups__card">
-                        <div class="our-groups__card-image-container">
-                            <picture>
-                                <source type="image/webp" srcset="img/groups/luchicki.webp 2x" />
-                                <img src="img/groups/luchicki.png" srcset="img/groups/luchicki@1x.png, img/groups/luchicki.png 2x" alt="Логотип Лучики" class="our-groups__card-image" />
-                            </picture>
-                        </div>
-                        <h5 class="our-groups__card-name">
-                            Лучики
+            </li>
+            <li class="benefits__list-item">
+                <div class="benefits__card">
+                    <h4 class="benefits__card-title">
+                        Гибкость
+                    </h4>
+                    <div class="benefits__card-content">
+                        <h5 class="benefits__card-subtitle">
+                            Индивидуальный тарифный план
                         </h5>
-                        <p class="our-groups__card-age">
-                            4-5 ЛЕТ
+                        <p class="benefits__card-text">
+                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
                         </p>
-                    </a>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <a href="schedule.html" class="our-groups__card">
-                        <div class="our-groups__card-image-container">
-                            <picture>
-                                <source type="image/webp" srcset="img/groups/vishenki.webp 2x" />
-                                <img src="img/groups/vishenki.png" srcset="img/groups/vishenki@1x.png, img/groups/vishenki.png 2x" alt="Логотип Вишенки" class="our-groups__card-image" />
-                            </picture>
-                        </div>
-                        <h5 class="our-groups__card-name">
-                            ВИШЕНКИ
+            </li>
+            <li class="benefits__list-item">
+                <div class="benefits__card">
+                    <h4 class="benefits__card-title">
+                        2-7
+                    </h4>
+                    <div class="benefits__card-content">
+                        <h5 class="benefits__card-subtitle">
+                            Разновозрастное взаимодействие детей
                         </h5>
-                        <p class="our-groups__card-age">
-                            5-6 ЛЕТ
+                        <p class="benefits__card-text">
+                            Мы постарались максимально приблизить атмосферу нашего учреждения к домашней, не только создавая уют в просторных игровых комнатах, но и с помощью наших педагогов.
                         </p>
-                    </a>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <a href="schedule.html" class="our-groups__card">
-                        <div class="our-groups__card-image-container">
-                            <picture>
-                                <source type="image/webp" srcset="img/groups/znaiki.webp 2x" />
-                                <img src="img/groups/znaiki.png" srcset="img/groups/znaiki@1x.png, img/groups/znaiki.png 2x" alt="Логотип Знайки" class="our-groups__card-image" />
-                            </picture>
-                        </div>
-                        <h5 class="our-groups__card-name">
-                            Знайки
-                        </h5>
-                        <p class="our-groups__card-age">
-                            6-7 ЛЕТ
-                        </p>
-                    </a>
+            </li>
+        </ul>
+    </section>
+    <section class="our-groups js-our-groups-slider">
+        <h2 class="our-groups__heading">
+            Наши группы
+        </h2>
+        <div class="our-groups__slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="schedule.html" class="our-groups__card">
+                            <div class="our-groups__card-image-container">
+                                <picture>
+                                    <source type="image/webp" srcset="img/groups/ladushki.webp 2x"/>
+                                    <img src="img/groups/ladushki.png" srcset="img/groups/ladushki@1x.png, img/groups/ladushki.png 2x" alt="" class="our-groups__card-image"/>
+                                </picture>
+                            </div>
+                            <h5 class="our-groups__card-name">
+                                Ладушки
+                            </h5>
+                            <p class="our-groups__card-age">
+                                2-3 ГОДА
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="schedule.html" class="our-groups__card">
+                            <div class="our-groups__card-image-container">
+                                <picture>
+                                    <source type="image/webp" srcset="img/groups/zvezdocki.webp 2x"/>
+                                    <img src="img/groups/zvezdocki.png" srcset="img/groups/zvezdocki@1x.png, img/groups/zvezdocki.png 2x" alt="Логотип Звездочки" class="our-groups__card-image"/>
+                                </picture>
+                            </div>
+                            <h5 class="our-groups__card-name">
+                                Звездочки
+                            </h5>
+                            <p class="our-groups__card-age">
+                                3-4 ГОДА
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="schedule.html" class="our-groups__card">
+                            <div class="our-groups__card-image-container">
+                                <picture>
+                                    <source type="image/webp" srcset="img/groups/luchicki.webp 2x"/>
+                                    <img src="img/groups/luchicki.png" srcset="img/groups/luchicki@1x.png, img/groups/luchicki.png 2x" alt="Логотип Лучики" class="our-groups__card-image"/>
+                                </picture>
+                            </div>
+                            <h5 class="our-groups__card-name">
+                                Лучики
+                            </h5>
+                            <p class="our-groups__card-age">
+                                4-5 ЛЕТ
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="schedule.html" class="our-groups__card">
+                            <div class="our-groups__card-image-container">
+                                <picture>
+                                    <source type="image/webp" srcset="img/groups/vishenki.webp 2x"/>
+                                    <img src="img/groups/vishenki.png" srcset="img/groups/vishenki@1x.png, img/groups/vishenki.png 2x" alt="Логотип Вишенки" class="our-groups__card-image"/>
+                                </picture>
+                            </div>
+                            <h5 class="our-groups__card-name">
+                                ВИШЕНКИ
+                            </h5>
+                            <p class="our-groups__card-age">
+                                5-6 ЛЕТ
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="schedule.html" class="our-groups__card">
+                            <div class="our-groups__card-image-container">
+                                <picture>
+                                    <source type="image/webp" srcset="img/groups/znaiki.webp 2x"/>
+                                    <img src="img/groups/znaiki.png" srcset="img/groups/znaiki@1x.png, img/groups/znaiki.png 2x" alt="Логотип Знайки" class="our-groups__card-image"/>
+                                </picture>
+                            </div>
+                            <h5 class="our-groups__card-name">
+                                Знайки
+                            </h5>
+                            <p class="our-groups__card-age">
+                                6-7 ЛЕТ
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="services">
-    <h2 class="services__heading">
-        Услуги и цены
-    </h2>
-    <ul class="services__list">
-        <li class="services__list-item">
-            <div class="services__card">
-                <h3 class="services__card-heading">
-                    Старт
-                </h3>
-                <p class="services__time">
-                    8:00-19:00
-                </p>
-                <span class="services__divider"> </span>
-                <div class="services__content">
-                    <p>
-                        Четырехразовое питание. Сетка занятий по программе Васильевой.
+    </section>
+    <section class="services">
+        <h2 class="services__heading">
+            Услуги и цены
+        </h2>
+        <ul class="services__list">
+            <li class="services__list-item">
+                <div class="services__card">
+                    <h3 class="services__card-heading">
+                        Старт
+                    </h3>
+                    <p class="services__time">
+                        8:00-19:00
                     </p>
-                    <p>
-                        <b>
-                            Дополнительно оплачивается: плавание, хореография, английский язык, музыкальные занятия.
-                        </b>
+                    <span class="services__divider"></span>
+                    <div class="services__content">
+                        <p>
+                            Четырехразовое питание. Сетка занятий по программе Васильевой.
+                        </p>
+                        <p>
+                            <b>
+                                Дополнительно оплачивается: плавание, хореография, английский язык, музыкальные занятия.
+                            </b>
+                        </p>
+                    </div>
+
+                    <p class="services__price">
+                        30 000 руб./месяц
                     </p>
                 </div>
-
-                <p class="services__price">
-                    30 000 руб./месяц
-                </p>
-            </div>
-        </li>
-        <li class="services__list-item">
-            <div class="services__card">
-                <h3 class="services__card-heading">
-                    Базовый
-                </h3>
-                <p class="services__time">
-                    8:00-20:00
-                </p>
-                <span class="services__divider"> </span>
-                <div class="services__content">
-                    <p>
-                        Пятиразовое питание. Сетка занятий по программе Васильевой.
+            </li>
+            <li class="services__list-item">
+                <div class="services__card">
+                    <h3 class="services__card-heading">
+                        Базовый
+                    </h3>
+                    <p class="services__time">
+                        8:00-20:00
                     </p>
-                    <p>
-                        <b>
-                            Включены: хореография, английский язык, бассейн – по 1 одному занятию в неделю.
-                        </b>
+                    <span class="services__divider"></span>
+                    <div class="services__content">
+                        <p>
+                            Пятиразовое питание. Сетка занятий по программе Васильевой.
+                        </p>
+                        <p>
+                            <b>
+                                Включены: хореография, английский язык, бассейн – по 1 одному занятию в неделю.
+                            </b>
+                        </p>
+                    </div>
+
+                    <p class="services__price">
+                        37 000 руб./месяц
                     </p>
                 </div>
+            </li>
+            <li class="services__list-item">
+                <div class="services__card">
+                    <h3 class="services__card-heading">
+                        Премиум
+                    </h3>
+                    <p class="services__time">
+                        8:00-20:00
+                    </p>
+                    <span class="services__divider"></span>
+                    <div class="services__content">
+                        <p>
+                            Пятиразовое питание. Сетка занятий по программе Васильевой.
+                        </p>
+                        <p>
+                            Включены: хореография, английский язык, бассейн – по 2 занятия в неделю.
+                        </p>
+                        <p>
+                            <b>
+                                В стоимость входят мастер-классы по флористике, мыловарению, бижутерии.
+                            </b>
+                        </p>
+                    </div>
 
-                <p class="services__price">
-                    37 000 руб./месяц
-                </p>
-            </div>
-        </li>
-        <li class="services__list-item">
-            <div class="services__card">
-                <h3 class="services__card-heading">
-                    Премиум
-                </h3>
-                <p class="services__time">
-                    8:00-20:00
-                </p>
-                <span class="services__divider"> </span>
-                <div class="services__content">
-                    <p>
-                        Пятиразовое питание. Сетка занятий по программе Васильевой.
-                    </p>
-                    <p>
-                        Включены: хореография, английский язык, бассейн – по 2 занятия в неделю.
-                    </p>
-                    <p>
-                        <b>
-                            В стоимость входят мастер-классы по флористике, мыловарению, бижутерии.
-                        </b>
+                    <p class="services__price">
+                        43 000 руб./месяц
                     </p>
                 </div>
-
-                <p class="services__price">
-                    43 000 руб./месяц
-                </p>
-            </div>
-        </li>
-        <li class="services__list-item">
-            <div class="services__card">
-                <h3 class="services__card-heading">
-                    Гибкий
-                </h3>
-                <p class="services__time">
-                    по договоренности
-                </p>
-                <span class="services__divider"> </span>
-                <div class="services__content">
-                    <p>
-                        Мы готовы обсуждать различные варианты графиков, питания и системы индивидуального обучения для Вашего ребёнка.
+            </li>
+            <li class="services__list-item">
+                <div class="services__card">
+                    <h3 class="services__card-heading">
+                        Гибкий
+                    </h3>
+                    <p class="services__time">
+                        по договоренности
                     </p>
-                    <p>
-                        <b>
-                            Перейдите к подробному описанию наших услуги и заполните форму обратной связи. Наши специалисты свяжутся с Вами для обсуждения всех условий.
-                        </b>
+                    <span class="services__divider"></span>
+                    <div class="services__content">
+                        <p>
+                            Мы готовы обсуждать различные варианты графиков, питания и системы индивидуального обучения для Вашего ребёнка.
+                        </p>
+                        <p>
+                            <b>
+                                Перейдите к подробному описанию наших услуги и заполните форму обратной связи. Наши специалисты свяжутся с Вами для обсуждения всех условий.
+                            </b>
+                        </p>
+                    </div>
+
+                    <p class="services__price">
+                        по договоренности
                     </p>
                 </div>
+            </li>
+        </ul>
+        <a href="prices.html" class="services__more-btn">
+            Подробнее
+        </a>
+    </section>
+    <section class="news">
+        <h2 class="news__heading">
+            Новости
+        </h2>
+        <ul class="news__list">
+            <li class="news__list-item">
+                <div class="news__card">
+                    <h4 class="news__card-title">
+                        В нашем детском саду прошел День Нептуна!
+                    </h4>
+                    <p class="news__card-text">
+                        Мы до последнего момента не сообщали родителям наших воспитанников о том, что планируем проводить праздник из-за непредсказуемой летней погоды.
+                    </p>
+                    <a href="#" class="news__card-link">Подробнее...</a>
+                </div>
+            </li>
+            <li class="news__list-item">
+                <div class="news__card">
+                    <h4 class="news__card-title">
+                        Акции в социальной сети Instagram
+                    </h4>
+                    <p class="news__card-text">
+                        Следите за нашими специальными предложениями и акциями в социальной сети Instagram! Осуществляйте подписку, выигрывайте призы, находите наиболее выгодные предложения месяца..
+                    </p>
+                    <a href="#" class="news__card-link">Подробнее...</a>
+                </div>
+            </li>
+            <li class="news__list-item">
+                <div class="news__card">
+                    <h4 class="news__card-title">
+                        2-е место на хореографическом конкурсе
+                    </h4>
+                    <p class="news__card-text">
+                        Поздравляем с великолемпым выступлением наших малышей из группы "Лучики" на хореографическом конкурсе, прошедшем в эти выходные в Москве!
+                    </p>
+                    <a href="#" class="news__card-link">Подробнее...</a>
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="news__all-news-link">Все новости</a>
 
-                <p class="services__price">
-                    по договоренности
-                </p>
-            </div>
-        </li>
-    </ul>
-    <a href="prices.html" class="services__more-btn">
-        Подробнее
-    </a>
-</section>
+    </section>
 
 {% endblock %}
