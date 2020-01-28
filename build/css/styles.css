@@ -4808,6 +4808,12 @@ img {
   .news-detailed__blocks-next-link:link,
   .news-detailed__blocks-next-link:visited {
     color: #E24F54; }
+  .no-touch .news-detailed__blocks-prev-link:hover > svg,
+  .touch .news-detailed__blocks-prev-link:active > svg, .no-touch
+  .news-detailed__blocks-next-link:hover > svg,
+  .touch
+  .news-detailed__blocks-next-link:active > svg {
+    fill: #E24F54; }
 
 .news-detailed__blocks-prev-link {
   align-self: flex-end; }

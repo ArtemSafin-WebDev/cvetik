@@ -327,6 +327,14 @@
     &:visited {
         color: #E24F54;
     }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        > svg {
+            fill: #E24F54;
+        }
+    }
 }
 
 
