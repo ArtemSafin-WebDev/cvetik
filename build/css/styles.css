@@ -1,13 +1,13 @@
 /**
- * Swiper 5.2.1
+ * Swiper 5.3.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://swiperjs.com
  *
- * Copyright 2014-2019 Vladimir Kharlampidi
+ * Copyright 2014-2020 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: November 16, 2019
+ * Released on: February 29, 2020
  */
 @font-face {
   font-family: 'swiper-icons';
@@ -1478,6 +1478,42 @@ img {
     .footer-nav__social-list-item {
       margin-right: 2rem; } }
   .footer-nav__social-list-item:last-child {
+    margin-right: 0; }
+
+.footer-nav__info-links {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center; }
+
+.footer-nav__info-link {
+  text-transform: uppercase;
+  margin-right: 2rem;
+  padding: 4px 5px;
+  border-radius: 25px;
+  border: 2px solid white;
+  position: relative;
+  font-size: 6px;
+  line-height: 1.52;
+  font-weight: 700;
+  font-family: var(--roboto);
+  z-index: 1;
+  min-width: 52px;
+  text-align: center; }
+  .footer-nav__info-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 1px solid var(--red);
+    background-color: #fff;
+    z-index: -1;
+    pointer-events: none; }
+  .footer-nav__info-link:link, .footer-nav__info-link:visited {
+    color: var(--red); }
+  .footer-nav__info-link:last-child {
     margin-right: 0; }
 
 .services {
